@@ -37,9 +37,9 @@ body, h1, h2, p, ul, li {
 body {
   font-family: 'Roboto', 'Poppins', Arial, sans-serif;
   line-height: 1.6;
-  color: #fff;
+  color: var(--eggshell);
   background: #060f04;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 /* =========================
@@ -106,7 +106,7 @@ header {
 }
 
 header h1 {
-  color: #fff;
+  color: var(--eggshell);
   font-family: 'Poppins', 'Roboto', Arial, sans-serif;
   font-weight: 800;
   font-style: italic;
@@ -156,6 +156,13 @@ section h2 {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
   font-size: 2em;
   margin-bottom: 10px;
+  font-style: italic;
+}
+
+section h3 {
+  font-family: 'Poppins', 'Roboto', Arial, sans-serif;
+  font-size: 2em;
+  margin-bottom: 10px;
 }
 
 /* =========================
@@ -180,10 +187,9 @@ section h2 {
 
 .experience-card a {
   text-decoration: none;
-  color: var(--red);
-  text-shadow: 1px 1px 1px var(--text-dark);
+  color: var(--darker_red);
   font-weight: bold;
-  text-size-adjust: 120%;
+  font-size: 1.5em;
 }
 
 .experience-card a:hover {
@@ -216,7 +222,7 @@ section h2 {
 
 .project-card {
   border: 1px solid var(--text-dark);
-  color: #fff;
+  color: var(--eggshell);
   margin: 10px 0;
   padding: 15px;
   text-align: center;
@@ -231,10 +237,9 @@ section h2 {
 
 .project-card a {
   text-decoration: none;
-  color: var(--red);
-  text-shadow: 1px 1px 1px var(--text-dark);
+  color: var(--darker_red);
   font-weight: bold;
-  text-size-adjust: 120%;
+  font-size: 1.5em;
 }
 
 .project-card a:hover {
@@ -245,96 +250,94 @@ section h2 {
    Volleyball Section
    ========================= */
 #projects-volleyball {
-  position: relative;
-  min-height: 400px;
-  background: url('images/action_shot.png') center center/cover no-repeat;
-  color: #fff;
   padding: 0;
-  overflow: hidden;
   border-radius: 5px;
-  display: flex;
-  align-items: stretch;
+  overflow: hidden;
 }
 
 .volleyball-content {
   display: flex;
-  flex-direction: row;
+  min-height: 400px;
   width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 2;
 }
 
-.volleyball-bullets {
-  flex: 1 1 40%;
+.volleyball-info {
+  flex: 1 1 50%;
+  background: var(--dark_purple);
+  color: var(--eggshell);
+  padding: 48px 40px 48px 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px 40px 40px 60px;
-  background: none;
-  color: #fff;
-  text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
-  max-width: 400px;
   z-index: 2;
 }
 
-.volleyball-bullets p {
+.volleyball-info h2 {
+  font-family: 'Poppins', 'Roboto', Arial, sans-serif;
+  font-size: 2.2em;
+  font-style: italic;
+  margin-bottom: 18px;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+}
+
+.volleyball-info p {
   font-size: 1.1em;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.volleyball-bullets ul {
+.volleyball-info ul {
   list-style-type: disc;
   padding-left: 20px;
   margin-bottom: 0;
 }
 
-.volleyball-bullets li {
+.volleyball-info li {
   margin-bottom: 8px;
 }
 
-.volleyball-reflection-strip {
-  flex: 1 1 60%;
+.volleyball-action {
+  flex: 1 1 50%;
+  position: relative;
+  background: url('images/action_shot.png') center center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(62, 54, 63, 0.92); /* dark purple, semi-transparent */
-  padding: 40px 30px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  min-width: 320px;
-  z-index: 2;
-  text-align: left;
 }
 
-.volleyball-reflection-strip p {
-  margin: 0;
+.volleyball-reflection {
+  background: rgba(62, 54, 63, 0.82); /* semi-transparent dark purple overlay */
+  padding: 32px 30px;
+  border-radius: 8px;
   max-width: 500px;
+  margin: 0 40px;
+  color: var(--eggshell);
+  text-align: left;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.volleyball-reflection p {
+  margin: 0;
   font-size: 1.15em;
-  color: #fff;
   text-shadow: 1px 1px 8px rgba(0,0,0,0.5);
 }
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
-  #projects-volleyball {
-    min-height: 350px;
-    flex-direction: column;
-  }
   .volleyball-content {
     flex-direction: column;
+    min-height: 0;
   }
-  .volleyball-bullets,
-  .volleyball-reflection-strip {
-    padding: 20px;
+  .volleyball-info,
+  .volleyball-action {
+    flex: 1 1 100%;
+    padding: 24px 16px;
     max-width: 100%;
-    min-width: unset;
-    border-radius: 0;
   }
-  .volleyball-reflection-strip p {
+  .volleyball-reflection {
+    margin: 20px 0;
+    padding: 18px 10px;
     font-size: 1em;
-    padding: 0;
   }
 }
 
@@ -363,6 +366,7 @@ footer {
 }
 
 .about-text p {
+  font-size: 1.25em;
   margin-bottom: 18px;
 }
 
@@ -399,19 +403,19 @@ footer {
   display: none;
   position: absolute;
   left: 50%;
-  bottom: -10px; /* hover box appears just below the image */
+  bottom: -10px;
   transform: translateX(-50%);
   background: var(--lime);
   border: 3px solid var(--darker_green);
   color: var(--darker_dark_purple);
   border-radius: 8px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.2);
-  padding: 18px 22px;
-  min-width: 260px;
+  padding: 10px 14px;      /* smaller padding */
+  min-width: 180px;        /* smaller width */
   z-index: 20;
   text-align: left;
-  font-size: 1em;
-  opacity: 0.92; /* slightly transparent */
+  font-size: 0.9em;        /* smaller font */
+  opacity: 0.80;
 }
 
 .profile-hover-container:hover .profile-hover-box {
