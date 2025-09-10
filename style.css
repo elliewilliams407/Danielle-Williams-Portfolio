@@ -120,6 +120,11 @@ header h2 {
   text-shadow: 1px 1px 1px var(--text-dark);
 }
 
+header h3 {
+  font-size: 1.3em;
+  text-shadow: 1px 1px 1px var(--text-dark);
+}
+
 header p {
   font-size: 1.2em;
 }
@@ -130,7 +135,7 @@ header p {
   top: 30px;
   right: 40px;
   background: var(--lime);
-  color: #fff;
+  color: var(--text-darker);
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
   font-size: 1rem;
@@ -149,7 +154,7 @@ header p {
    Sections
    ========================= */
 section {
-  margin: 20px 0;
+  margin: 50px 0;
   padding: 20px;
   background: var(--darker_dark_purple);
   border-radius: 5px;
@@ -240,6 +245,7 @@ section h4 {
   padding: 15px;
   text-align: center;
   background: var(--darker_green);
+  box-shadow: var(--darker_lime) 0px 0px 8px;
 }
 
 .project-card img {
@@ -253,6 +259,7 @@ section h4 {
   color: var(--red);
   font-weight: bold;
   font-size: 1.5em;
+  text-shadow: 1px 1px 1px var(--text-dark);
 }
 
 .project-card a:hover {
@@ -465,8 +472,7 @@ footer {
 #contact h2,
 #contact h3 {
   color: var(--text-dark);
-  font-family: 'Poppins', 'Roboto', Arial, sans-serif;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.08);
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 2em;
   margin-bottom: 10px;
   font-style: italic;
