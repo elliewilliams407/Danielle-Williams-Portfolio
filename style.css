@@ -8,6 +8,8 @@
   --dark_purple: #3E363F;
   --red: #af332f;
 
+  --background: #060f04;
+
   --darker_eggshell: #fffce8c0;
   --darker_lime: #b8b32dc2;
   --darker_green: #697A21c0;
@@ -17,7 +19,7 @@
   /*--card-bg: #9e998d;*/
   --text-dark: #1c1915;
   --text-darker: #1c1915;
-  --header-bg: #060f04;
+  --header-bg: var(--background);
   --section-bg: #1c2721;
 }
 
@@ -38,7 +40,7 @@ body {
   font-family: 'Roboto', 'Poppins', Arial, sans-serif;
   line-height: 1.6;
   color: var(--eggshell);
-  background: #060f04;
+  background: var(--background);
   padding: 0 40px;
 }
 
@@ -335,7 +337,7 @@ section h4 {
 }
 
 .volleyball-reflection p {
-  font-size: 3em;
+  font-size: 1.6em;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -459,8 +461,8 @@ footer {
    ========================= */
 
 #contact {
-  color: var(--text-dark);
-  background: var(--eggshell);
+  color: var(--eggshell);
+  background: var(--background);
   margin: 20px 0;
   padding: 20px;
   border-radius: 5px;
@@ -469,7 +471,7 @@ footer {
 
 #contact h2,
 #contact h3 {
-  color: var(--text-dark);
+  color: var(--eggshell);
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 2em;
   margin-bottom: 10px;
@@ -484,4 +486,5 @@ footer {
 #contact ul {
   padding-left: 40px; /* increase this value for more indentation */
   margin-bottom: 0;
+  color: var(--darker_eggshell)
 }
