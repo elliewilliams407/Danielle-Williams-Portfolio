@@ -44,7 +44,7 @@ body {
 
 /* Header */ 
 header { 
-    background: #576e58;
+    background: #3a1d57;
     background-size: cover; 
     color: #fff; 
     height: 400px; /* adjust to how tall you want */ 
@@ -53,7 +53,7 @@ header {
     justify-content: center; 
     align-items: center; 
     text-align: center; 
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1); /* x, y, blur, color */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1); /* x, y, blur, color */
 } 
 
 header h1 {
@@ -67,7 +67,35 @@ header p {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
 }
 
+.resume-button {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  background: #576e58;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: background 0.3s;
+  z-index: 10;
+}
+
+.resume-button:hover {
+  background: #435444;
+}
+
+header {
+  position: relative; /* Add this so absolute positioning works */
+}
+
 /* Navigation */
+nav {
+    background: #fff
+}
+
 nav ul {
     list-style: none;
     text-align: center;
@@ -120,7 +148,7 @@ section h2 {
 
 .experience-card a {
     text-decoration: none;
-    color: #576e58;
+    color: #3a1d57;
     font-weight: bold;
 }
 
@@ -186,18 +214,23 @@ section h2 {
     gap: 20px;
 }
 
-.volleyball-images img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+.volleyball-info {
+    background: #9e998d;           /* match experience-card */
+    color: #000000;                /* match experience-card */
+    border: 1px solid #1c1915;     /* match experience-card */
+    border-radius: 5px;            /* match experience-card */
+    box-shadow: none;              /* remove extra shadow */
+    padding: 15px;                 /* match experience-card */
+    text-align: center;            /* match experience-card */
+    font-family: inherit;          /* inherit font */
 }
 
-.volleyball-info {
-    flex: 2 1 400px;
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+.volleyball-images img {
+    max-width: 120px;              /* match experience-card img */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: none;              /* remove extra shadow */
 }
 
 .timeline p {
@@ -278,7 +311,7 @@ footer {
 
 .about-image .profile {
   position: relative;
-  width: 100%;
+  width: 150%;
   border-radius: 50%; /* circle portrait */
   z-index: 1;
 }
