@@ -292,6 +292,10 @@ footer {
   flex: 1;
 }
 
+.about-text p {
+  margin-bottom: 18px; /* adds space between paragraphs */
+}
+
 .about-image {
   flex: 1;
   position: relative;
@@ -311,7 +315,48 @@ footer {
 
 .about-image .profile {
   position: relative;
-  width: 150%;
-  border-radius: 50%; /* circle portrait */
+  width: 50%; 
   z-index: 1;
+}
+
+.profile-hover-container {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-hover-box {
+  display: none;
+  position: absolute;
+  top: 110%; /* below the image */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1c2721;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  padding: 18px 22px;
+  min-width: 260px;
+  z-index: 20;
+  text-align: left;
+  font-size: 1em;
+}
+
+.profile-hover-container:hover .profile-hover-box {
+  display: block;
+}
+
+.profile-hover-container:hover .profile-hover-box {
+  display: block;
+}
+
+.profile-hover-box h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.1em;
+  color: #a3aea5;
+}
+
+.profile-hover-box p {
+  margin: 0 0 10px 0;
+  font-size: 0.98em;
 }
