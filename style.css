@@ -11,7 +11,7 @@
   --darker_eggshell: #fffce8c0;
   --darker_lime: #b8b32dc2;
   --darker_green: #697A21c0;
-  --darker_dark_purple: #3e363f81;
+  --darker_dark_purple: #3e363f2b;
   --darker_red: #dd3f3a91;
   
   /*--card-bg: #9e998d;*/
@@ -34,7 +34,7 @@ body, h1, h2, p, ul, li {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', 'Poppins', Arial, sans-serif;
   line-height: 1.6;
   color: #fff;
   background: #060f04;
@@ -48,6 +48,8 @@ nav {
   position: sticky;
   top: 0;
   background: var(--red);
+  border: 2px solid var(--darker_red);
+  border-radius: 15px;
   z-index: 1000;
 }
 
@@ -65,7 +67,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: var(--dark_purple);
+  color: var(--text-dark);
   font-weight: bold;
 }
 
@@ -103,9 +105,12 @@ header {
 }
 
 header h1 {
-  font-size: 2.5em;
+  font-family: 'Poppins', 'Roboto', Arial, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 4em;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 }
 
 header p {
@@ -140,7 +145,7 @@ header p {
 section {
   margin: 20px 0;
   padding: 20px;
-  background: var(--dark_purple);
+  background: var(--darker_dark_purple);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -154,9 +159,9 @@ section h2 {
    Experience Cards
    ========================= */
 .experience-card {
-  border: 1px solid var(--text-dark);
+  border: 1px solid var(--lime);
   color: #000;
-  border-radius: 5px;
+  border-radius: 25px;
   margin: 10px 0;
   padding: 15px;
   text-align: center;
@@ -172,13 +177,13 @@ section h2 {
 
 .experience-card a {
   text-decoration: none;
-  color: var(--green);
+  color: var(--red);
   font-weight: bold;
 }
 
 .experience-card a:hover {
   text-decoration: underline;
-  background: var(--darker_green)
+  color: var(--darker_red);
 }
 
 /* =========================
@@ -192,12 +197,12 @@ section h2 {
 
 .project-card {
   border: 1px solid var(--text-dark);
-  color: #000;
+  color: #fff;
   border-radius: 5px;
   margin: 10px 0;
   padding: 15px;
   text-align: center;
-  background: var(--eggshell);
+  background: var(--darker_green);
 }
 
 .project-card img {
@@ -208,7 +213,7 @@ section h2 {
 
 .project-card a {
   text-decoration: none;
-  color: #576e58;
+  color: var(--red);
   font-weight: bold;
 }
 
@@ -220,9 +225,9 @@ section h2 {
    Volleyball Section
    ========================= */
 #projects-volleyball {
+  font-family: 'Roboto', 'Poppins', Arial, sans-serif;
   padding: 40px;
-  background-color: var(--eggshell);
-  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--dark_purple);
   color: #333;
 }
 
@@ -251,14 +256,14 @@ section h2 {
 }
 
 .volleyball-info {
-  background: var(--dark_purple);
-  color: #000;
+  background: var(--eggshell);
+  color: #fff;
+  font-family: 'Roboto', 'Poppins', Arial, sans-serif;
   border: 1px solid var(--text-dark);
   border-radius: 5px;
   box-shadow: none;
   padding: 15px;
   text-align: center;
-  font-family: inherit;
 }
 
 /* Volleyball Timeline & Reflection */
@@ -292,9 +297,6 @@ section h2 {
   .volleyball-images {
     flex-direction: row;
     justify-content: center;
-  }
-  .volleyball-images img {
-    width: 45%;
   }
 }
 
@@ -345,7 +347,7 @@ footer {
 
 .about-image .profile {
   position: relative;
-  width: 60%;
+  width: 80%;
   z-index: 1;
 }
 
@@ -362,11 +364,10 @@ footer {
   left: 50%;
   transform: translateX(-50%);
   background: var(--green);
-  border: var(--darker_red);
-  border-radius: 5px;
+  border: 3px solid var(--darker_red);
   color: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 16px rgba(0,0,0,1);
   padding: 18px 22px;
   min-width: 260px;
   z-index: 20;
