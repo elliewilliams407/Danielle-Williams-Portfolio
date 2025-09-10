@@ -1,0 +1,284 @@
+/*Navigation*/
+nav {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 1000;
+}
+
+nav a:hover {
+  color: #0077cc;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* General Reset */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background: #060f04;
+    padding: 0 20px;
+}
+
+/* Header */ 
+header { 
+    background: url("images/back2.jpg") no-repeat center center; 
+    background-size: cover; 
+    color: #fff; 
+    height: 400px; /* adjust to how tall you want */ 
+    display: flex; /* optional: center text */ 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1); /* x, y, blur, color */
+} 
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* x, y, blur, color */
+}
+
+header p {
+    font-size: 1.2em;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 20px 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #576e58;
+    font-weight: bold;
+}
+
+/* Section Styles */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #1c2721;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Experience Cards */
+.experience-card {
+    border: 1px solid #1c1915;
+    color: #000000;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    text-align: center;
+    background: #9e998d;
+}
+
+.experience-card img {
+    max-width: 120px;  /* keeps logos a consistent size */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.experience-card a {
+    text-decoration: none;
+    color: #576e58;
+    font-weight: bold;
+}
+
+.experience-card a:hover {
+    text-decoration: underline;
+}
+
+/* Project Cards */
+#projects {
+  display: flex;
+  flex-direction: column; /* stacks cards vertically */
+  gap: 20px; /* space between cards */
+}
+
+.project-card {
+    border: 1px solid #1c1915;
+    color: #000000;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    text-align: center;
+    background: #9e998d;
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #576e58;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+
+
+#projects-volleyball {
+    padding: 40px;
+    background-color: #fefefe;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+.volleyball-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.volleyball-images {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.volleyball-images img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.volleyball-info {
+    flex: 2 1 400px;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.timeline p {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.timeline ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.timeline li {
+    margin-bottom: 8px;
+}
+
+.reflection p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .volleyball-container {
+    flex-direction: column;
+    }
+
+    .volleyball-images {
+    flex-direction: row;
+    justify-content: center;
+    }
+
+    .volleyball-images img {
+    width: 45%;
+    }
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 0.8em;
+    color: #777;
+}
+
+
+/* About */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-image {
+  flex: 1;
+  position: relative;
+  max-width: 350px;
+}
+
+.about-image .shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  opacity: 0.6;
+  mix-blend-mode: multiply; /* makes it blend */
+}
+
+.about-image .profile {
+  position: relative;
+  width: 100%;
+  border-radius: 50%; /* circle portrait */
+  z-index: 1;
+}
