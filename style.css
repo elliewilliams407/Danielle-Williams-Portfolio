@@ -152,16 +152,24 @@ section {
 }
 
 section h2 {
-  font-family: 'Poppins', 'Roboto', Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
-  font-size: 2em;
+  font-size: 4em;
   margin-bottom: 10px;
   font-style: italic;
 }
 
 section h3 {
   font-family: 'Poppins', 'Roboto', Arial, sans-serif;
+  font-size: 3em;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+section h4 {
+  font-family: 'Poppins', 'Roboto', Arial, sans-serif;
   font-size: 2em;
+  margin-top: 2px;
   margin-bottom: 10px;
 }
 
@@ -173,7 +181,7 @@ section h3 {
   color: var(--text-darker);
   border-radius: 25px;
   margin: 10px 0;
-  padding: 15px;
+  padding: 25px;
   text-align: center;
   background: var(--eggshell);
 }
@@ -182,7 +190,7 @@ section h3 {
   max-width: 120px;
   height: auto;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .experience-card a {
@@ -263,7 +271,7 @@ section h3 {
 
 .volleyball-info {
   flex: 1 1 50%;
-  background: var(--dark_purple);
+  background: var(--darker_dark_purple);
   color: var(--eggshell);
   padding: 48px 40px 48px 60px;
   display: flex;
@@ -274,14 +282,14 @@ section h3 {
 
 .volleyball-info h2 {
   font-family: 'Poppins', 'Roboto', Arial, sans-serif;
-  font-size: 2.2em;
+  font-size: 3em;
   font-style: italic;
   margin-bottom: 18px;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
 }
 
 .volleyball-info p {
-  font-size: 1.1em;
+  font-size: 2.2em;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -301,7 +309,7 @@ section h3 {
   position: relative;
   background: url('images/action_shot.png') center center/cover no-repeat;
   display: flex;
-  align-items: center;
+  align-items: right;
   justify-content: center;
 }
 
@@ -432,4 +440,33 @@ footer {
 .profile-hover-box p {
   margin: 0 0 10px 0;
   font-size: 0.98em;
+}
+
+
+/* =========================
+   Contact Section
+   ========================= */
+
+#contact {
+  color: var(--text-dark);
+  background: var(--eggshell);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2,
+#contact h3 {
+  color: var(--text-dark);
+  font-family: 'Poppins', 'Roboto', Arial, sans-serif;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.08);
+  font-size: 2em;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+#contact p {
+  font-size: 1.25em;
+  margin-bottom: 18px;
 }
