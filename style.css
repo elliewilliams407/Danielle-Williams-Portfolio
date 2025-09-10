@@ -209,7 +209,7 @@ section h4 {
 
 .experience-card a {
   text-decoration: none;
-  color: var(--darker_red);
+  color: var(--red);
   font-weight: bold;
   font-size: 1.5em;
 }
@@ -259,8 +259,11 @@ section h4 {
 }
 
 .project-card a {
+  background-color: var(--red);
+  border-radius: 8px;
+  padding: 8px 12px;
   text-decoration: none;
-  color: var(--darker_red);
+  color: var(--eggshell);
   font-weight: bold;
   font-size: 1.5em;
   text-shadow: 1px 1px 1px var(--text-dark);
