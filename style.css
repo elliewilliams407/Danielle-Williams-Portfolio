@@ -102,7 +102,7 @@ header {
   align-items: center;
   text-align: center;
   position: relative;
-  text-shadow: 2px 2px 2px var(--text-dark);
+
 }
 
 header h1 {
@@ -113,6 +113,11 @@ header h1 {
   font-size: 5em;
   margin-bottom: 10px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+
+header h2 {
+  font-size: 2em;
+  text-shadow: 1px 1px 1px var(--text-dark);
 }
 
 header p {
@@ -156,7 +161,7 @@ section h2 {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
   font-size: 3em;
   margin-bottom: 10px;
-  font-style: italic;
+  /*font-style: italic;*/
 }
 
 section h3 {
@@ -181,7 +186,7 @@ section h4 {
   color: var(--text-darker);
   border-radius: 25px;
   margin: 10px 0;
-  padding: 25px;
+  padding: 15px;
   text-align: center;
   background: var(--eggshell);
 }
@@ -245,7 +250,7 @@ section h4 {
 
 .project-card a {
   text-decoration: none;
-  color: var(--darker_red);
+  color: var(--red);
   font-weight: bold;
   font-size: 1.5em;
 }
@@ -314,12 +319,12 @@ section h4 {
 }
 
 .volleyball-reflection {
-  background: rgba(184, 180, 45, 0.60); /* semi-transparent dark purple overlay */
+  background: rgba(255, 252, 232, 0.40); /* semi-transparent dark purple overlay */
   padding: 32px 30px;
   border-radius: 8px;
   max-width: 500px;
   margin: 0 40px;
-  color: var(--eggshell);
+  color: var(--text-darker);
   text-align: left;
   box-shadow: 0 4px 16px rgba(0,0,0,0.2);
 }
@@ -472,6 +477,6 @@ footer {
 }
 
 #contact ul {
-  padding-left: 30px; /* increase this value for more indentation */
+  padding-left: 40px; /* increase this value for more indentation */
   margin-bottom: 0;
 }
