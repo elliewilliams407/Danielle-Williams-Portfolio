@@ -11,11 +11,12 @@
   --darker_eggshell: #fffce8c0;
   --darker_lime: #b8b32dc2;
   --darker_green: #697A21c0;
-  --darker_dark_purple: #3e363f2b;
+  --darker_dark_purple: #373138;
   --darker_red: #dd3f3a91;
   
   /*--card-bg: #9e998d;*/
   --text-dark: #1c1915;
+  --text-darker: #1c1915;
   --header-bg: var(--green);
   --section-bg: #1c2721;
 }
@@ -48,8 +49,7 @@ nav {
   position: sticky;
   top: 0;
   background: var(--red);
-  border: 2px solid var(--darker_red);
-  border-radius: 15px;
+  border: 5px solid var(--darker_red);
   z-index: 1000;
 }
 
@@ -115,7 +115,6 @@ header h1 {
 
 header p {
   font-size: 1.2em;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
 }
 
 /* Resume Button */
@@ -178,11 +177,13 @@ section h2 {
 .experience-card a {
   text-decoration: none;
   color: var(--red);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
   font-weight: bold;
 }
 
 .experience-card a:hover {
   text-decoration: underline;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
   color: var(--darker_red);
 }
 
@@ -190,6 +191,12 @@ section h2 {
    Project Cards
    ========================= */
 #projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.projects-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -214,6 +221,7 @@ section h2 {
 .project-card a {
   text-decoration: none;
   color: var(--red);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
   font-weight: bold;
 }
 
@@ -271,8 +279,8 @@ section h2 {
 
 .volleyball-reflection-strip {
   width: 100%;
-  background: var(--dark_purple);
-  opacity: 0.92;
+  background: rgba(62, 54, 63, 0.92); /* instead of var(--dark_purple) and opacity */
+  opacity: 1;
   padding: 32px 0;
   position: absolute;
   bottom: 0;
@@ -308,74 +316,6 @@ section h2 {
   }
 }
 
-.volleyball-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: 20px;
-}
-
-.volleyball-images {
-  flex: 1 1 300px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.volleyball-images img {
-  max-width: 120px;
-  height: auto;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  box-shadow: none;
-}
-
-.volleyball-info {
-  background: var(--eggshell);
-  color: #fff;
-  font-family: 'Roboto', 'Poppins', Arial, sans-serif;
-  border: 1px solid var(--text-dark);
-  border-radius: 5px;
-  box-shadow: none;
-  padding: 15px;
-  text-align: center;
-}
-
-/* Volleyball Timeline & Reflection */
-.timeline p {
-  font-size: 1.1em;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.timeline ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-bottom: 20px;
-}
-
-.timeline li {
-  margin-bottom: 8px;
-}
-
-.reflection p {
-  font-size: 1em;
-  line-height: 1.6;
-  margin: 0;
-}
-
-/* Responsive Volleyball */
-@media (max-width: 768px) {
-  .volleyball-container {
-    flex-direction: column;
-  }
-  .volleyball-images {
-    flex-direction: row;
-    justify-content: center;
-  }
-}
 
 /* =========================
    Footer
@@ -437,19 +377,20 @@ footer {
 .profile-hover-box {
   display: none;
   position: absolute;
-  top: 110%;
   left: 50%;
+  bottom: -10px; /* hover box appears just below the image */
   transform: translateX(-50%);
   background: var(--green);
   border: 3px solid var(--darker_red);
   color: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 16px rgba(0,0,0,1);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
   padding: 18px 22px;
   min-width: 260px;
   z-index: 20;
   text-align: left;
   font-size: 1em;
+  opacity: 0.92; /* slightly transparent */
 }
 
 .profile-hover-container:hover .profile-hover-box {
