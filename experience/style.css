@@ -67,7 +67,7 @@ p {
     margin-bottom: 1rem;
 }
 .reference {
-    background-color: #e8f0fe;
+    background-color: var(--darker_green);
     padding: 1rem;
     border-left: 5px solid var(--green);
 }
