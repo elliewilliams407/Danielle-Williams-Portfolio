@@ -224,11 +224,88 @@ section h2 {
 /* =========================
    Volleyball Section
    ========================= */
+
 #projects-volleyball {
-  font-family: 'Roboto', 'Poppins', Arial, sans-serif;
-  padding: 40px;
-  background-color: var(--dark_purple);
-  color: #333;
+  position: relative;
+  min-height: 400px;
+  background: url('images/action_shot.png') center center/cover no-repeat;
+  color: #fff;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.volleyball-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.volleyball-bullets {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  background: none;
+  color: #fff;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+  max-width: 400px;
+  z-index: 2;
+}
+
+.volleyball-bullets p {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.volleyball-bullets ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.volleyball-bullets li {
+  margin-bottom: 8px;
+}
+
+.volleyball-reflection-strip {
+  width: 100%;
+  background: var(--dark_purple);
+  opacity: 0.92;
+  padding: 32px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  text-align: center;
+}
+
+.volleyball-reflection-strip p {
+  margin: 0 auto;
+  max-width: 900px;
+  font-size: 1.15em;
+  color: #fff;
+  padding: 0 30px;
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #projects-volleyball {
+    min-height: 350px;
+  }
+  .volleyball-bullets {
+    position: static;
+    margin: 20px;
+    text-align: left;
+    background: none;
+    max-width: 100%;
+  }
+  .volleyball-reflection-strip p {
+    padding: 0 10px;
+    font-size: 1em;
+  }
 }
 
 .volleyball-container {
