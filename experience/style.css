@@ -8,6 +8,8 @@
   --dark_purple: #3E363F;
   --red: #af332f;
 
+  --background: #060f04;
+
   --darker_eggshell: #fffce8c0;
   --darker_lime: #b8b32dc2;
   --darker_green: #697A21c0;
@@ -17,7 +19,7 @@
   /*--card-bg: #9e998d;*/
   --text-dark: #1c1915;
   --text-darker: #1c1915;
-  --header-bg: var(--green);
+  --header-bg: var(--background);
   --section-bg: #1c2721;
 }
 
@@ -29,12 +31,12 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: var(--text-darker);
+    background-color: var(--background);
     color: var(--eggshell);
 }
 header {
-    background-color: #0052a5;
-    color: #fff;
+    background-color: var(--darker_green);
+    color: var(--eggshell);
     padding: 3rem 1rem;
     text-align: center;
 }
@@ -51,12 +53,12 @@ section {
     max-width: 900px;
     margin: 2rem auto;
     padding: 1.5rem;
-    background-color: #fff;
+    background-color: var(--darker_dark_purple);
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 section h2 {
-    color: #0052a5;
+    color: var(--dar);
     margin-bottom: 1rem;
     border-bottom: 2px solid #0052a5;
     padding-bottom: 0.3rem;

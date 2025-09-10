@@ -53,8 +53,34 @@ nav {
   background: var(--red);
   border: 5px solid var(--text-dark);
   z-index: 1000;
-  padding: 4px 0; /* add this line to reduce nav height */
+  padding: 4px 0;
+  min-height: 48px;
 }
+
+.resume-button {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  background: var(--lime);
+  color: var(--text-darker);
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: background 0.3s;
+  z-index: 10;
+}
+
+.resume-button:hover {
+  background: var(--darker_lime);
+}
+
+nav {
+  position: relative; /* Ensure absolute positioning works for .resume-button */
+}
+
 
 nav ul {
   list-style: none;
@@ -129,27 +155,6 @@ header h3 {
 
 header p {
   font-size: 1.2em;
-}
-
-/* Resume Button */
-.resume-button {
-  position: absolute;
-  top: 30px;
-  right: 40px;
-  background: var(--lime);
-  color: var(--text-darker);
-  padding: 0.6rem 1.2rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  transition: background 0.3s;
-  z-index: 10;
-}
-
-.resume-button:hover {
-  background: var(--darker_lime);
 }
 
 /* =========================
@@ -337,8 +342,7 @@ section h4 {
 }
 
 .volleyball-reflection p {
-  font-size: 1.6em;
-  font-weight: bold;
+  font-size: 1.4em;
   margin-bottom: 10px;
 }
 
@@ -357,7 +361,7 @@ section h4 {
   .volleyball-reflection {
     margin: 20px 0;
     padding: 18px 10px;
-    font-size: 1em;
+    font-size: 1.6em;
     margin-bottom: 18px;
   }
 }
@@ -376,6 +380,7 @@ footer {
    About Section
    ========================= */
 .about-container {
+  background-color: var(--darker_green);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -426,9 +431,9 @@ footer {
   left: 60%;
   bottom: -10px;
   transform: translateX(-40%);
-  background: var(--lime);
-  border: 3px solid var(--darker_green);
-  color: var(--darker_dark_purple);
+  background: var(--dark_purple);
+  border: 3px solid var(--lime);
+  color: var(--eggshell);
   border-radius: 8px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.2);
   padding: 10px 14px;      /* smaller padding */
