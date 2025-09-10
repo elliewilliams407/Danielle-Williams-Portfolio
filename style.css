@@ -1,95 +1,124 @@
-/*Navigation*/
+/* =========================
+   Color Palette & Variables
+   ========================= */
+:root {
+  --eggshell: #FFFCE8;
+  --lime: #B8B42D;
+  --green: #697A21;
+  --dark_purple: #3E363F;
+  --red: #DD403A;
+
+  --darker_eggshell: #fffce8c0;
+  --darker_lime: #b8b32dc2;
+  --darker_green: #697A21c0;
+  --darker_dark_purple: #3e363f81;
+  --darker_red: #dd3f3a91;
+  
+  /*--card-bg: #9e998d;*/
+  --text-dark: #1c1915;
+  --header-bg: var(--green);
+  --section-bg: #1c2721;
+}
+
+/* =========================
+   General Reset & Base
+   ========================= */
+html {
+  scroll-behavior: smooth;
+}
+
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background: #060f04;
+  padding: 0 20px;
+}
+
+/* =========================
+   Navigation
+   ========================= */
 nav {
   position: sticky;
   top: 0;
-  background: #FFFCE8;
+  background: var(--red);
   z-index: 1000;
 }
 
-nav a:hover {
-  color: #3E363F;
-  text-decoration: underline;
-}
-
 nav ul {
-    list-style: none;
-    text-align: center;
-    margin: 20px 0;
-    padding: 0;
+  list-style: none;
+  text-align: center;
+  margin: 20px 0;
+  padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+  display: inline;
+  margin: 0 10px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #B8B42D;
-    font-weight: bold;
+  text-decoration: none;
+  color: var(--dark_purple);
+  font-weight: bold;
 }
 
+nav a:hover {
+  color: var(--darker_dark_purple);
+  text-decoration: underline;
+}
+
+/* Responsive Navigation */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
     align-items: center;
   }
-
   nav ul li {
     margin-bottom: 10px;
   }
 }
 
-html {
-  scroll-behavior: smooth;
+/* =========================
+   Header
+   ========================= */
+header {
+  background: var(--header-bg);
+  background-size: cover;
+  color: #fff;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+  position: relative;
 }
-
-/* General Reset */
-body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Style */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #ffffff;
-    background: #060f04;
-    padding: 0 20px;
-}
-
-/* Header */ 
-header { 
-    background: #697A21;
-    background-size: cover; 
-    color: #fff; 
-    height: 400px; /* adjust to how tall you want */ 
-    display: flex; /* optional: center text */ 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    text-align: center; 
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1); /* x, y, blur, color */
-} 
 
 header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* x, y, blur, color */
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 header p {
-    font-size: 1.2em;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+  font-size: 1.2em;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
 }
 
+/* Resume Button */
 .resume-button {
   position: absolute;
   top: 30px;
   right: 40px;
-  background: #B8B42D;
+  background: var(--lime);
   color: #fff;
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
@@ -102,181 +131,186 @@ header p {
 }
 
 .resume-button:hover {
-  background: rgb(67, 84, 68);
+  background: var(--darker_lime);
 }
 
-header {
-  position: relative; /* Add this so absolute positioning works */
-}
-
-
-/* Section Styles */
+/* =========================
+   Sections
+   ========================= */
 section {
-    margin: 20px 0;
-    padding: 20px;
-    background: #1c2721;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  padding: 20px;
+  background: var(--dark_purple);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
+  font-size: 2em;
+  margin-bottom: 10px;
 }
 
-/* Experience Cards */
+/* =========================
+   Experience Cards
+   ========================= */
 .experience-card {
-    border: 1px solid #1c1915;
-    color: #000000;
-    border-radius: 5px;
-    margin: 10px 0;
-    padding: 15px;
-    text-align: center;
-    background: #9e998d;
+  border: 1px solid var(--text-dark);
+  color: #000;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 15px;
+  text-align: center;
+  background: var(--eggshell);
 }
 
 .experience-card img {
-    max-width: 120px;  /* keeps logos a consistent size */
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
+  max-width: 120px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .experience-card a {
-    text-decoration: none;
-    color: #3a1d57;
-    font-weight: bold;
+  text-decoration: none;
+  color: var(--green);
+  font-weight: bold;
 }
 
 .experience-card a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+  background: var(--darker_green)
 }
 
-/* Project Cards */
+/* =========================
+   Project Cards
+   ========================= */
 #projects {
   display: flex;
-  flex-direction: column; /* stacks cards vertically */
-  gap: 20px; /* space between cards */
+  flex-direction: column;
+  gap: 20px;
 }
 
 .project-card {
-    border: 1px solid #1c1915;
-    color: #000000;
-    border-radius: 5px;
-    margin: 10px 0;
-    padding: 15px;
-    text-align: center;
-    background: #FFFCE8;
+  border: 1px solid var(--text-dark);
+  color: #000;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 15px;
+  text-align: center;
+  background: var(--eggshell);
 }
 
 .project-card img {
-    max-width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .project-card a {
-    text-decoration: none;
-    color: #576e58;
-    font-weight: bold;
+  text-decoration: none;
+  color: #576e58;
+  font-weight: bold;
 }
 
 .project-card a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-
-
+/* =========================
+   Volleyball Section
+   ========================= */
 #projects-volleyball {
-    padding: 40px;
-    background-color: #FFFCE8;  /* light beige background */
-    font-family: 'Segoe UI', sans-serif;
-    color: #333;
+  padding: 40px;
+  background-color: var(--eggshell);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
 }
 
 .volleyball-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
 }
 
 .volleyball-images {
-    flex: 1 1 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.volleyball-info {
-    background: #9e998d;           /* match experience-card */
-    color: #000000;                /* match experience-card */
-    border: 1px solid #1c1915;     /* match experience-card */
-    border-radius: 5px;            /* match experience-card */
-    box-shadow: none;              /* remove extra shadow */
-    padding: 15px;                 /* match experience-card */
-    text-align: center;            /* match experience-card */
-    font-family: inherit;          /* inherit font */
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .volleyball-images img {
-    max-width: 120px;              /* match experience-card img */
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    box-shadow: none;              /* remove extra shadow */
+  max-width: 120px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: none;
 }
 
+.volleyball-info {
+  background: var(--dark_purple);
+  color: #000;
+  border: 1px solid var(--text-dark);
+  border-radius: 5px;
+  box-shadow: none;
+  padding: 15px;
+  text-align: center;
+  font-family: inherit;
+}
+
+/* Volleyball Timeline & Reflection */
 .timeline p {
-    font-size: 1.1em;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .timeline ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-bottom: 20px;
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
 }
 
 .timeline li {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .reflection p {
-    font-size: 1em;
-    line-height: 1.6;
-    margin: 0;
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 0;
 }
 
+/* Responsive Volleyball */
 @media (max-width: 768px) {
-    .volleyball-container {
+  .volleyball-container {
     flex-direction: column;
-    }
-
-    .volleyball-images {
+  }
+  .volleyball-images {
     flex-direction: row;
     justify-content: center;
-    }
-
-    .volleyball-images img {
+  }
+  .volleyball-images img {
     width: 45%;
-    }
+  }
 }
 
-
-/* Footer */
+/* =========================
+   Footer
+   ========================= */
 footer {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 0.8em;
-    color: #777;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 0.8em;
+  color: #777;
 }
 
-
-/* About */
+/* =========================
+   About Section
+   ========================= */
 .about-container {
   display: flex;
   align-items: center;
@@ -289,7 +323,7 @@ footer {
 }
 
 .about-text p {
-  margin-bottom: 18px; /* adds space between paragraphs */
+  margin-bottom: 18px;
 }
 
 .about-image {
@@ -306,15 +340,16 @@ footer {
   height: auto;
   z-index: 0;
   opacity: 0.6;
-  mix-blend-mode: multiply; /* makes it blend */
+  mix-blend-mode: multiply;
 }
 
 .about-image .profile {
   position: relative;
-  width: 120%; 
+  width: 60%;
   z-index: 1;
 }
 
+/* Profile Hover Box */
 .profile-hover-container {
   position: relative;
   display: inline-block;
@@ -323,10 +358,12 @@ footer {
 .profile-hover-box {
   display: none;
   position: absolute;
-  top: 110%; /* below the image */
+  top: 110%;
   left: 50%;
   transform: translateX(-50%);
-  background: #1c2721;
+  background: var(--green);
+  border: var(--darker_red);
+  border-radius: 5px;
   color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.2);
@@ -335,10 +372,6 @@ footer {
   z-index: 20;
   text-align: left;
   font-size: 1em;
-}
-
-.profile-hover-container:hover .profile-hover-box {
-  display: block;
 }
 
 .profile-hover-container:hover .profile-hover-box {
