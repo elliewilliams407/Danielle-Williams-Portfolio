@@ -1,0 +1,3 @@
+### Our demo app merges the visual excitement of Instagram with the detailed insights of Yelp. 
+
+### To create this, my team tied together our realistic data generation, the development of our  REST API, and the implementation of a set of user interface screens in Streamlit to create a usable end-result application.

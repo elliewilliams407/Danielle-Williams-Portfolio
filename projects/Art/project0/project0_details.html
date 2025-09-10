@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Art Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, #2e3b34, #576e58);
+      color: #f0f5f0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery-item {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    .caption {
+      padding: 1rem;
+      text-align: center;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #f5f5f5;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Wonder of the World Project</h1>
+    <p>A showcase of a select Old, New, and Natural Wonders of the World! The point of this project was to experiement with different art forms while also capitalizing on the unique advantages they each provide. This was a project done for AP Art and Design and recieved a 5 by College Board.</p>
+  </header>
+
+  <section class="gallery">
+    <div class="gallery-item">
+      <img src="coll.jpg" alt="Artwork 1">
+      <div class="caption">The Colosseum - New Wonder - Charcoal</div>
+    </div>
+    <div class="gallery-item">
+      <img src="coral.jpg" alt="Artwork 2">
+      <div class="caption">The Great Barrier Reef - Natural Wonder - Color Pencil</div>
+    </div>
+    <div class="gallery-item">
+      <img src="greatwall.jpg" alt="Artwork 3">
+      <div class="caption">The Great Wall of China - New Wonder - Chinese Ink</div>
+    </div>
+    <div class="gallery-item">
+      <img src="mteverest.jpg" alt="Artwork 4">
+      <div class="caption">Mount Everest - Natural Wonder - Gouache</div>
+    </div>
+        <div class="gallery-item">
+      <img src="tajmahal.jpg" alt="Artwork 4">
+      <div class="caption">The Taj Mahal - New Wonder - Acrylic</div>
+    </div>
+        <div class="gallery-item">
+      <img src="pyramids.jpg" alt="Artwork 4">
+      <div class="caption">The Great Pyramids of Giza - Old Wonder - Chalk Pastel</div>
+    </div>
+        <div class="gallery-item">
+      <img src="northernlights.jpg" alt="Artwork 4">
+      <div class="caption">The Northern Lights - Natural Wonder - Oil Pastel</div>
+    </div>
+        </div>
+        <div class="gallery-item">
+      <img src="watercolor.jpg" alt="Artwork 4">
+      <div class="caption">Lighthouse of Alexandria - Old Wonder - Watercolor and Pen Mixed Media</div>
+    </div>
+        </div>
+        <div class="gallery-item">
+      <img src="petra.jpg" alt="Artwork 4">
+      <div class="caption">Petra - New Wonder - Pointillism</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Danielle. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
