@@ -44,7 +44,7 @@ body {
 
 /* Header */ 
 header { 
-    background: url("images/back2.jpg") no-repeat center center; 
+    background: #576e58;
     background-size: cover; 
     color: #fff; 
     height: 400px; /* adjust to how tall you want */ 
