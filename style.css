@@ -5,7 +5,7 @@
   --eggshell: #FFFCE8;
   --lime: #B8B42D;
   --green: #697A21;
-  --dark_purple: #3E363F;
+  --dark_purple: #222121;
   --red: #af332f;
 
   --background: #060f04;
@@ -13,7 +13,7 @@
   --darker_eggshell: #fffce8c0;
   --darker_lime: #b8b32dc2;
   --darker_green: #697A21c0;
-  --darker_dark_purple: #2d282e;
+  --darker_dark_purple: #171616;
   --darker_red: #832623;
   
   /*--card-bg: #9e998d;*/
@@ -52,7 +52,6 @@ nav {
   top: 0;
   width: 100vw;
   background: var(--red);
-  border: 5px solid var(--text-dark);
   z-index: 1000;
   padding: 4px 0;
   min-height: 48px;
