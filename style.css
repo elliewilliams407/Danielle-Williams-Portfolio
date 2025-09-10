@@ -49,7 +49,7 @@ nav {
   position: sticky;
   top: 0;
   background: var(--red);
-  border: 5px solid var(--darker_red);
+  border: 5px solid var(--text-dark);
   z-index: 1000;
   padding: 4px 0; /* add this line to reduce nav height */
 }
@@ -57,7 +57,7 @@ nav {
 nav ul {
   list-style: none;
   text-align: center;
-  margin: 8px 0;
+  margin: 6px 0;
   padding: 0;
 }
 
@@ -94,7 +94,7 @@ nav a:hover {
 header {
   background: var(--header-bg);
   background-size: cover;
-  color: #fff;
+  color: var(--eggshell);
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -102,9 +102,11 @@ header {
   align-items: center;
   text-align: center;
   position: relative;
+  text-shadow: 2px 2px 2px var(--text-dark);
 }
 
 header h1 {
+  color: #fff;
   font-family: 'Poppins', 'Roboto', Arial, sans-serif;
   font-weight: 800;
   font-style: italic;
@@ -151,6 +153,7 @@ section {
 
 section h2 {
   font-family: 'Poppins', 'Roboto', Arial, sans-serif;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
   font-size: 2em;
   margin-bottom: 10px;
 }
@@ -178,14 +181,13 @@ section h2 {
 .experience-card a {
   text-decoration: none;
   color: var(--red);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+  text-shadow: 1px 1px 1px var(--text-dark);
   font-weight: bold;
+  text-size-adjust: 120%;
 }
 
 .experience-card a:hover {
   text-decoration: underline;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
-  color: var(--darker_red);
 }
 
 /* =========================
@@ -230,8 +232,9 @@ section h2 {
 .project-card a {
   text-decoration: none;
   color: var(--red);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+  text-shadow: 1px 1px 1px var(--text-dark);
   font-weight: bold;
+  text-size-adjust: 120%;
 }
 
 .project-card a:hover {
@@ -249,19 +252,25 @@ section h2 {
   padding: 0;
   overflow: hidden;
   border-radius: 5px;
-  display: block;
+  display: flex;
+  align-items: stretch;
 }
 
 .volleyball-content {
-  position: relative;
+  display: flex;
+  flex-direction: row;
   width: 100%;
   height: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .volleyball-bullets {
-  position: absolute;
-  top: 30px;
-  left: 40px;
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 40px 40px 60px;
   background: none;
   color: #fff;
   text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
@@ -286,24 +295,24 @@ section h2 {
 }
 
 .volleyball-reflection-strip {
-  width: 100%;
+  flex: 1 1 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: rgba(62, 54, 63, 0.92); /* dark purple, semi-transparent */
-  padding: 32px 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  text-align: center;
-  border-bottom-left-radius: 5px;
+  padding: 40px 30px;
+  border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  min-width: 320px;
+  z-index: 2;
+  text-align: left;
 }
 
 .volleyball-reflection-strip p {
-  margin: 0 auto;
-  max-width: 900px;
+  margin: 0;
+  max-width: 500px;
   font-size: 1.15em;
   color: #fff;
-  padding: 0 30px;
   text-shadow: 1px 1px 8px rgba(0,0,0,0.5);
 }
 
@@ -311,19 +320,23 @@ section h2 {
 @media (max-width: 900px) {
   #projects-volleyball {
     min-height: 350px;
+    flex-direction: column;
   }
-  .volleyball-bullets {
-    position: static;
-    margin: 20px 0 0 20px;
-    text-align: left;
+  .volleyball-content {
+    flex-direction: column;
+  }
+  .volleyball-bullets,
+  .volleyball-reflection-strip {
+    padding: 20px;
     max-width: 100%;
+    min-width: unset;
+    border-radius: 0;
   }
   .volleyball-reflection-strip p {
-    padding: 0 10px;
     font-size: 1em;
+    padding: 0;
   }
 }
-
 
 /* =========================
    Footer
@@ -390,7 +403,7 @@ footer {
   transform: translateX(-50%);
   background: var(--lime);
   border: 3px solid var(--darker_green);
-  color: #fff;
+  color: var(--darker_dark_purple);
   border-radius: 8px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.2);
   padding: 18px 22px;
@@ -409,7 +422,7 @@ footer {
   margin-top: 0;
   margin-bottom: 8px;
   font-size: 1.1em;
-  color: var(--text-dark);
+  color: var(--text-darker);
 }
 
 .profile-hover-box p {
