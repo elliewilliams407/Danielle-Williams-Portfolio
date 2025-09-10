@@ -2,13 +2,31 @@
 nav {
   position: sticky;
   top: 0;
-  background: #fff;
+  background: #FFFCE8;
   z-index: 1000;
 }
 
 nav a:hover {
-  color: #0077cc;
+  color: #3E363F;
   text-decoration: underline;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 20px 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #B8B42D;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
@@ -44,7 +62,7 @@ body {
 
 /* Header */ 
 header { 
-    background: #3a1d57;
+    background: #697A21;
     background-size: cover; 
     color: #fff; 
     height: 400px; /* adjust to how tall you want */ 
@@ -71,7 +89,7 @@ header p {
   position: absolute;
   top: 30px;
   right: 40px;
-  background: #576e58;
+  background: #B8B42D;
   color: #fff;
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
@@ -84,35 +102,13 @@ header p {
 }
 
 .resume-button:hover {
-  background: #435444;
+  background: rgb(67, 84, 68);
 }
 
 header {
   position: relative; /* Add this so absolute positioning works */
 }
 
-/* Navigation */
-nav {
-    background: #fff
-}
-
-nav ul {
-    list-style: none;
-    text-align: center;
-    margin: 20px 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #576e58;
-    font-weight: bold;
-}
 
 /* Section Styles */
 section {
@@ -170,7 +166,7 @@ section h2 {
     margin: 10px 0;
     padding: 15px;
     text-align: center;
-    background: #9e998d;
+    background: #FFFCE8;
 }
 
 .project-card img {
@@ -193,7 +189,7 @@ section h2 {
 
 #projects-volleyball {
     padding: 40px;
-    background-color: #fefefe;
+    background-color: #FFFCE8;  /* light beige background */
     font-family: 'Segoe UI', sans-serif;
     color: #333;
 }
