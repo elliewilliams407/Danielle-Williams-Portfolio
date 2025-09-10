@@ -50,10 +50,9 @@ body {
 nav {
   position: sticky;
   top: 0;
-  left: 50%;
   width: 100vw;
-  transform: translateX(-50%);
   background: var(--red);
+  border: 5px solid var(--text-dark);
   z-index: 1000;
   padding: 4px 0;
   min-height: 48px;
@@ -323,7 +322,7 @@ section h4 {
 .volleyball-action {
   flex: 1 1 50%;
   position: relative;
-  background: url('images/action_shot.png') center center/cover no-repeat;
+  background: url('images/action_shot.png') center bottom/cover no-repeat;
   display: flex;
   align-items: stretch; /* stretch child to full height */
   justify-content: flex-end; /* push reflection to the right */
