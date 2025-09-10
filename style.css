@@ -17,7 +17,7 @@
   /*--card-bg: #9e998d;*/
   --text-dark: #1c1915;
   --text-darker: #1c1915;
-  --header-bg: var(--green);
+  --header-bg: #060f04;
   --section-bg: #1c2721;
 }
 
@@ -301,7 +301,6 @@ section h4 {
 
 .volleyball-info p {
   font-size: 1.2em;
-  font-weight: bold;
   margin-bottom: 10px;
 }
 
@@ -325,10 +324,10 @@ section h4 {
 }
 
 .volleyball-reflection {
-  background: rgba(255, 252, 232, 0.40); /* semi-transparent dark purple overlay */
+  background: rgba(255, 252, 232, 0.40); 
   padding: 32px 30px;
   border-radius: 8px;
-  max-width: 500px;
+  max-width: 200px;
   margin: 0 40px;
   color: var(--text-darker);
   text-align: left;
@@ -336,9 +335,9 @@ section h4 {
 }
 
 .volleyball-reflection p {
-  margin: 0;
   font-size: 3em;
-  text-shadow: 1px 1px 8px rgba(0,0,0,0.5);
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 /* Responsive adjustments */

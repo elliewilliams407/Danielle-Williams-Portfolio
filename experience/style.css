@@ -1,0 +1,84 @@
+/* =========================
+   Color Palette & Variables
+   ========================= */
+:root {
+  --eggshell: #FFFCE8;
+  --lime: #B8B42D;
+  --green: #697A21;
+  --dark_purple: #3E363F;
+  --red: #af332f;
+
+  --darker_eggshell: #fffce8c0;
+  --darker_lime: #b8b32dc2;
+  --darker_green: #697A21c0;
+  --darker_dark_purple: #2d282e;
+  --darker_red: #832623;
+  
+  /*--card-bg: #9e998d;*/
+  --text-dark: #1c1915;
+  --text-darker: #1c1915;
+  --header-bg: var(--green);
+  --section-bg: #1c2721;
+}
+
+/* =========================
+   General Reset & Base
+   ========================= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--text-darker);
+    color: var(--eggshell);
+}
+header {
+    background-color: #0052a5;
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+header p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+section h2 {
+    color: #0052a5;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #0052a5;
+    padding-bottom: 0.3rem;
+}
+p {
+    margin-bottom: 1rem;
+}
+.reference {
+    background-color: #e8f0fe;
+    padding: 1rem;
+    border-left: 5px solid #0052a5;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0052a5;
+    color: #fff;
+}
+a {
+    color: #0052a5;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
