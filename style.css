@@ -41,7 +41,7 @@ body {
   line-height: 1.6;
   color: var(--eggshell);
   background: var(--background);
-  padding: 0 40px;
+  padding: 0; /* Remove horizontal padding */
 }
 
 /* =========================
@@ -51,10 +51,9 @@ nav {
   position: sticky;
   top: 0;
   left: 50%;
-  width: 100vw;                /* Full viewport width */
-  transform: translateX(-50%); /* Center nav bar */
+  width: 100vw;
+  transform: translateX(-50%);
   background: var(--red);
-  border: 5px solid var(--text-dark);
   z-index: 1000;
   padding: 4px 0;
   min-height: 48px;
@@ -65,7 +64,7 @@ nav {
   top: 50%;                /* center vertically */
   right: 40px;
   transform: translateY(-50%);
-  background: var(--lime);
+  background: var(--green);
   color: var(--text-darker);
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
@@ -79,10 +78,6 @@ nav {
 
 .resume-button:hover {
   background: var(--darker_lime);
-}
-
-nav {
-  position: relative; /* Ensure absolute positioning works for .resume-button */
 }
 
 
@@ -330,24 +325,32 @@ section h4 {
   position: relative;
   background: url('images/action_shot.png') center center/cover no-repeat;
   display: flex;
-  align-items: right;
-  justify-content: center;
+  align-items: stretch; /* stretch child to full height */
+  justify-content: flex-end; /* push reflection to the right */
+  height: 100%;
 }
 
 .volleyball-reflection {
-  background: rgba(255, 252, 232, 0.40); 
-  padding: 32px 30px;
-  border-radius: 8px;
-  max-width: 300px;
-  margin: 0 40px;
+  background: rgba(255, 252, 232, 0.40);
+  border-radius: 0 8px 8px 0;
+  width: 100%;
+  max-width: 320px;
+  height: 100%;
+  margin: 0;
   color: var(--text-darker);
   text-align: left;
   box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  position: relative;
 }
 
 .volleyball-reflection p {
   font-size: 1.6em;
   margin-bottom: 10px;
+  margin-top: 0;
 }
 
 /* Responsive adjustments */
@@ -361,12 +364,16 @@ section h4 {
     flex: 1 1 100%;
     padding: 24px 16px;
     max-width: 100%;
+    height: auto;
   }
   .volleyball-reflection {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
     margin: 20px 0;
     padding: 18px 10px;
     font-size: 1.6em;
-    margin-bottom: 18px;
   }
 }
 
@@ -384,7 +391,7 @@ footer {
    About Section
    ========================= */
 .about-container {
-  background-color: var(--darker_green); /* solid green background */
+  background-color: var(--darker_dark_purple); /* solid green background */
   color: var(--eggshell);         /* light text for contrast */
   display: flex;
   align-items: center;
