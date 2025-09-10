@@ -95,14 +95,14 @@ header {
   background: var(--header-bg);
   background-size: cover;
   color: var(--eggshell);
-  height: 400px;
+  height: 100vh; /* full viewport height */
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   position: relative;
-
 }
 
 header h1 {
@@ -154,7 +154,7 @@ header p {
    Sections
    ========================= */
 section {
-  margin: 50px 0;
+  margin: 80px 0;
   padding: 20px;
   background: var(--darker_dark_purple);
   border-radius: 5px;
@@ -421,7 +421,7 @@ footer {
 .profile-hover-box {
   display: none;
   position: absolute;
-  left: 70%;
+  left: 60%;
   bottom: -10px;
   transform: translateX(-40%);
   background: var(--lime);
