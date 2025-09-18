@@ -261,7 +261,7 @@ section h4 {
   margin: 10px 0;
   padding: 15px;
   text-align: center;
-  background: var(--darker_green);
+  background: var(--green);
   box-shadow: var(--darker_lime) 0px 0px 6px;
 }
 
@@ -274,7 +274,7 @@ section h4 {
 .project-card a {
   background-color: var(--red);
   border-radius: 8px;
-  padding: 12px 12px;
+  padding: 4px 12px;
   text-decoration: none;
   color: var(--eggshell);
   font-weight: bold;
@@ -337,11 +337,11 @@ section h4 {
 .volleyball-action {
   flex: 1 1 50%;
   position: relative;
-  background: url('images/action_shot.png') center bottom/cover no-repeat;
+  background: url('images/action_shot.png') center center/cover no-repeat;
   display: flex;
   align-items: stretch; /* stretch child to full height */
   justify-content: flex-end; /* push reflection to the right */
-  height: 100%;
+  height: auto;
 }
 
 .volleyball-reflection {
