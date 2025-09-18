@@ -1,27 +1,6 @@
 /* =========================
    Color Palette & Variables
    ========================= */
-:root {
-  --eggshell: #FFFCE8;
-  --lime: #B8B42D;
-  --green: #697A21;
-  --dark_purple: #3E363F;
-  --red: #af332f;
-
-  --background: #060f04;
-
-  --darker_eggshell: #fffce8c0;
-  --darker_lime: #b8b32dc2;
-  --darker_green: #697A21c0;
-  --darker_dark_purple: #2d282e;
-  --darker_red: #832623;
-  
-  /*--card-bg: #9e998d;*/
-  --text-dark: #1c1915;
-  --text-darker: #1c1915;
-  --header-bg: var(--background);
-  --section-bg: #1c2721;
-}
 
 
 /* =========================
@@ -31,7 +10,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f0f5f0; /* deep background */
+    background: var(--eggshell); /* deep background */
     color: #1c2721; /* soft light text */
 }
 
@@ -83,7 +62,7 @@ section {
 .project-card h3 {
     margin-top: 0;
     font-size: 1.4rem;
-    color: #dfe7df;
+    color: var(--eggshell);
 }
 
 .project-card p {
@@ -95,8 +74,8 @@ section {
 .project-card a {
     display: inline-block;
     text-decoration: none;
-    background: #576e58; /* button green */
-    color: #fff;
+    background: var(--green); /* button green */
+    color: var(--eggshell);
     padding: 0.6rem 1.2rem;
     border-radius: 8px;
     font-size: 0.95rem;
@@ -104,13 +83,19 @@ section {
 }
 
 .project-card a:hover {
-    background: #435444;
+    background: var(--darker_green);
 }
 
 footer {
     text-align: center;
     padding: 1.5rem;
-    background: #222d26;
+    background: var(--background);
     font-size: 0.9rem;
-    color: #a3aea5;
+    color: var(--lime);
 }
+
+footer a {
+    color: var(--eggshell);
+    font-weight: 600;
+}
+  
