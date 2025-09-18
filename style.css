@@ -3,6 +3,20 @@
    ========================= */
 :root {
   --eggshell: #FFFCE8;
+  --lime: #DCCCA3;
+  --green: #697A21;
+  --dark_purple: #824C71;
+  --red: #90AA86;
+
+  --background: #060f04;
+
+  --darker_eggshell: #fffce8c0;
+  --darker_lime: rgba(135, 132, 35, 0.761)
+  --darker_green: #697A21c0;
+  --darker_dark_purple: #58344d;
+  --darker_red: #708269;
+
+  /*--eggshell: #FFFCE8;
   --lime: #B8B42D;
   --green: #697A21;
   --dark_purple: #252525;
@@ -15,8 +29,7 @@
   --darker_green: #697A21c0;
   --darker_dark_purple: #323232;
   --darker_red: #832623;
-  
-  /*--card-bg: #9e998d;*/
+  */
   --text-dark: #1c1915;
   --text-darker: #1c1915;
   --header-bg: var(--background);
@@ -265,7 +278,6 @@ section h4 {
   text-decoration: none;
   color: var(--eggshell);
   font-weight: bold;
-  font-size: 1.5em;
   text-shadow: 1px 1px 1px var(--text-dark);
 }
 
