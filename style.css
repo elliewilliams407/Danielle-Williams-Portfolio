@@ -297,7 +297,7 @@ section h4 {
 
 .volleyball-info {
   flex: 1 1 50%;
-  background: var(--darker_dark_purple);
+  background: var(--section-bg);
   color: var(--eggshell);
   padding: 48px 40px 48px 60px;
   display: flex;
@@ -401,7 +401,7 @@ footer {
    About Section
    ========================= */
 .about-container {
-  background-color: var(--darker_dark_purple); /* solid green background */
+  background-color: var(--section-bg); /* solid green background */
   color: var(--eggshell);         /* light text for contrast */
   display: flex;
   align-items: center;

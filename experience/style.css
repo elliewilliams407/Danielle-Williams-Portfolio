@@ -48,7 +48,7 @@ body {
     color: var(--eggshell);
 }
 header {
-    background-color: var(--darker_lime);
+    background-color: var(--section-bg);
     color: var(--eggshell);
     padding: 3rem 1rem;
     text-align: center;
@@ -60,7 +60,7 @@ header h1 {
     text-shadow: 1px 1px 1px var(--text-dark);
 }
 header p {
-    color: var(--text-dark);
+    color: var(--eggshell);
     font-size: 1.2rem;
     max-width: 700px;
     margin: 0 auto;
@@ -83,12 +83,12 @@ p {
     margin-bottom: 1rem;
 }
 .reference {
-    background-color: var(--dark_purple);
+    background-color: var(--darker_lime);
     padding: 1rem;
     border-left: 5px solid var(--green);
+    color: var(--eggshell);
 }
 .reference h2 {
-    color: var(--dar);
     margin-bottom: 1rem;
     border-bottom: 2px solid var(--green);
     padding-bottom: 0.3rem;
