@@ -11,8 +11,8 @@
   --background: #060f04;
 
   --darker_eggshell: #fffce8c0;
-  --darker_lime: #708269
-  --darker_green: #697A21c0;
+  --darker_lime: #708269;
+  --darker_green: #6a7a21;
   --darker_dark_purple: #292f0f;
   --darker_red: #58344d;
 
@@ -44,11 +44,11 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: var(--darker_dark_purple);
+    background-color: var(--background);
     color: var(--eggshell);
 }
 header {
-    background-color: var(--green);
+    background-color: var(--dark_purple);
     color: var(--eggshell);
     padding: 3rem 1rem;
     text-align: center;
@@ -68,7 +68,7 @@ section {
     max-width: 900px;
     margin: 2rem auto;
     padding: 1.5rem;
-    background-color: var(--dark_purple);
+    background-color: var(--darker_dark_purple);
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
@@ -93,7 +93,7 @@ footer {
     color: var(--eggshell);
 }
 a {
-    color: var(--text-dark);
+    color: var(--darker_eggshell);
     text-decoration: none;
 }
 a:hover {

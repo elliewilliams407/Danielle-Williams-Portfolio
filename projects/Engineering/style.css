@@ -8,8 +8,8 @@
   --background: #060f04;
 
   --darker_eggshell: #fffce8c0;
-  --darker_lime: #708269
-  --darker_green: #697A21c0;
+  --darker_lime: #708269;
+  --darker_green: #6a7a21;
   --darker_dark_purple: #292f0f;
   --darker_red: #58344d;
 
@@ -37,7 +37,7 @@ body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: var(--eggshell);
+    background: var(--background);
     color: #1c2721;
     line-height: 1.6;
 }

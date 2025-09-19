@@ -4,15 +4,15 @@
 :root {
   --eggshell: #FFFCE8;
   --lime: hwb(103 53% 33%);
-  --green: #697A21;
+  --green: #697921;
   --dark_purple: #3e4716;
   --red: #824C71;
 
   --background: #060f04;
 
-  --darker_eggshell: #fffce8c0;
+  --darker_eggshell: #a1a094;
   --darker_lime: #708269;
-  --darker_green: #697A21c0;
+  --darker_green: #4b561d;
   --darker_dark_purple: #292f0f;
   --darker_red: #58344d;
 
@@ -77,7 +77,7 @@ nav {
   transform: translateY(-50%);
   background: var(--green);
   color: var(--text-darker);
-  padding: 0.6rem 0.6rem;
+  padding: 0.5rem 0.5rem;
   border-radius: 8px;
   font-size: 1rem;
   text-decoration: none;
@@ -175,7 +175,7 @@ section {
   padding: 20px;
   background: var(--darker_dark_purple);
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px var(--darker_red);
 }
 
 section h2 {
@@ -268,7 +268,7 @@ section h4 {
 .project-card a {
   background-color: var(--red);
   border-radius: 8px;
-  padding: 2px 12px;
+  padding: 86px 12px;
   text-decoration: none;
   color: var(--eggshell);
   font-weight: bold;
@@ -329,6 +329,7 @@ section h4 {
 }
 
 .volleyball-action {
+  font-family: 'Roboto', Arial, sans-serif;
   flex: 1 1 50%;
   position: relative;
   background: url('images/action_shot.png') center center/cover no-repeat;
@@ -339,7 +340,7 @@ section h4 {
 }
 
 .volleyball-reflection {
-  background: rgba(255, 252, 232, 0.20);
+  background: rgba(255, 252, 232, 0.60);
   border-radius: 0 8px 8px 0;
   width: 100%;
   max-width: 320px;
@@ -356,7 +357,8 @@ section h4 {
 }
 
 .volleyball-reflection p {
-  font-size: 2.5em;
+
+  font-size: 4em;
   margin-bottom: 10px;
   margin-top: 0;
 }
@@ -515,4 +517,10 @@ footer {
   padding-left: 40px; /* increase this value for more indentation */
   margin-bottom: 0;
   color: var(--darker_eggshell)
+}
+
+#contact a {
+  color: var(--darker_eggshell);
+  font-weight: bold;
+  text-decoration: none;
 }
