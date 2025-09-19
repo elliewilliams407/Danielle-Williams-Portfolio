@@ -7,6 +7,7 @@
   --green: #697921;
   --dark_purple: #353f08;
   --red: #824C71;
+  --blue:#7bd9de;
 
   --background: #060f04;
 
@@ -15,6 +16,7 @@
   --darker_green: rgb(69, 79, 27);
   --darker_dark_purple: #2b3306;
   --darker_red: #4e2e45;
+  --darker_blue:#2b6063;
 
   /*--eggshell: #FFFCE8;
   --lime: #B8B42D;
@@ -53,7 +55,7 @@ body {
   font-family: 'Roboto', 'Poppins', Arial, sans-serif;
   line-height: 1.6;
   color: var(--eggshell);
-  background: var(--background);
+  background: var(--section-bg);
   padding: 0; /* Remove horizontal padding */
 }
 
@@ -130,7 +132,7 @@ nav a:hover {
    Header
    ========================= */
 header {
-  background: var(--header-bg);
+  background: var(--section-bg);
   background-size: cover;
   color: var(--eggshell);
   height: 100vh; /* full viewport height */
@@ -173,7 +175,7 @@ header p {
 section {
   margin: 80px 0;
   padding: 20px;
-  background: var(--section-bg);
+  background: var(--background);
   border-radius: 5px;
   box-shadow: 0 0 10px var(--darker_red);
 }
@@ -256,14 +258,18 @@ section h4 {
   }
 
 .project-card {
-  border: 1px solid var(--text-dark);
+  /*border: 1px solid var(--text-dark);*/
   color: var(--eggshell);
   border-radius: 25px;
   margin: 10px 0;
   padding: 15px;
   text-align: center;
-  background: var(--green);
+  background: var(--darker_blue);
   box-shadow: var(--lime) 0px 0px 6px;
+}
+
+header h3 {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 }
 
 .project-card a {

@@ -83,10 +83,10 @@ p {
     margin-bottom: 1rem;
 }
 .reference {
-    background-color: var(--darker_lime);
+    background-color: var(--darker_dark_purple);
     padding: 1rem;
     border-left: 5px solid var(--green);
-    color: var(--text-dark);
+    color: var(--eggshell);
 }
 .reference h2 {
     margin-bottom: 1rem;
