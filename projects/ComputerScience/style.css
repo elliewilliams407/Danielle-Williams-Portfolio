@@ -8,8 +8,8 @@
   --background: #060f04;
 
   --darker_eggshell: #fffce8c0;
-  --darker_lime: #708269
-  --darker_green: #697A21c0;
+  --darker_lime: #708269;
+  --darker_green: #6a7a21;
   --darker_dark_purple: #292f0f;
   --darker_red: #58344d;
 
@@ -115,11 +115,11 @@ footer {
 text-align: center;
 padding: 1.5rem;
 font-size: 0.95rem;
-background: var(--eggshell);
+background: var(--background);
 margin-top: 3rem;
 }
 
 footer a {
-color: #1c2721;
+color: var(--eggshell);
 font-weight: 600;
 }

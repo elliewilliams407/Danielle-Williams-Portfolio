@@ -93,11 +93,11 @@ footer {
     padding: 1rem;
     background: #f5f5f5;
     font-size: 0.9rem;
-    color: #1c2721;
+    color: var(--background);
 }
 
 footer a {
-    color: #1c2721;
+    color: var(--eggshell);
     font-weight: 600;
 }
   
