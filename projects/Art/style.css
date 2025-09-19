@@ -44,7 +44,7 @@ body {
 header {
     text-align: center;
     padding: 2rem;
-    background: linear-gradient(135deg, var(--darker_red), var(--red));
+    background: linear-gradient(135deg, var(--darker_red), var(--section-bg));
     color: var(--eggshell);
 }
 
@@ -52,6 +52,7 @@ header h1 {
     margin: 0;
     font-size: 2.5rem;
 }
+
 
 .gallery {
     display: grid;

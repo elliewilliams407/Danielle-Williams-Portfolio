@@ -55,6 +55,16 @@ header h1 {
     letter-spacing: 1px;
 }
 
+header h2 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.3rem;
+}
+
 section {
     max-width: 900px;
     margin: 2.5rem auto;
