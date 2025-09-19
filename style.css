@@ -258,6 +258,7 @@ section h4 {
 .project-card {
   border: 1px solid var(--text-dark);
   color: var(--eggshell);
+  border-radius: 25px;
   margin: 10px 0;
   padding: 15px;
   text-align: center;
