@@ -48,7 +48,7 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, var(--darker_red), var(--darker_green));
+    background: linear-gradient(135deg, var(--darker_red), var(--darker_dark_purple));
     color: var(--eggshell);
     text-align: center;
     padding: 4rem 2rem;
