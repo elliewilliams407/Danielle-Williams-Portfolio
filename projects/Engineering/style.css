@@ -37,13 +37,13 @@ body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: var(--background);
+    background: var(--darker_lime);
     color: #1c2721;
     line-height: 1.6;
 }
 
 header {
-    background: linear-gradient(135deg, var(--darker_red), var(--red));
+    background: linear-gradient(135deg, var(--red), var(--darker_red));
     color: var(--eggshell);
     text-align: center;
     padding: 4rem 2rem 3rem;
@@ -116,12 +116,12 @@ footer {
     text-align: center;
     padding: 1.5rem;
     font-size: 0.95rem;
-    background: var(--eggshell);
+    background: var(--background);
     margin-top: 3rem;
 }
 
 footer a {
-    color: #1c2721;
+    color: var(--eggshell);
     font-weight: 600;
 }
   
