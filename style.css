@@ -224,7 +224,7 @@ section h4 {
 
 .experience-card a {
   text-decoration: none;
-  color: var(--red);
+  color: var(--darker_green);
   font-weight: bold;
   font-size: 1.5em;
 }
