@@ -43,7 +43,7 @@ body {
 }
 
 header {
-    background: var(--background);
+    background: var(--section-bg);
     color: var(--eggshell);
     text-align: center;
     padding: 4rem 2rem 3rem;

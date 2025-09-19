@@ -43,7 +43,7 @@ line-height: 1.6;
 }
 
 header {
-background: var(--background);
+background: var(--section-bg);
 color: var(--eggshell);
 text-align: center;
 padding: 4rem 2rem 3rem;
@@ -57,7 +57,7 @@ letter-spacing: 1px;
 
 header h2 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.7rem;
     letter-spacing: 1px;
 }
 
