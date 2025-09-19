@@ -9,14 +9,14 @@
   --red: #824C71;
   --blue:#7bd9de;
 
-  --background: #060f04;
+  --background: #080901;
 
   --darker_eggshell: #8d8a6e;
   --darker_lime: #708269;
   --darker_green: rgb(69, 79, 27);
   --darker_dark_purple: #2b3306;
   --darker_red: #4e2e45;
-  --darker_blue:#2b6063;
+  --darker_blue:#143007;
 
   /*--eggshell: #FFFCE8;
   --lime: #B8B42D;
@@ -55,7 +55,7 @@ body {
   font-family: 'Roboto', 'Poppins', Arial, sans-serif;
   line-height: 1.6;
   color: var(--eggshell);
-  background: var(--background);
+  background: var(--bacwkground);
   padding: 0; /* Remove horizontal padding */
 }
 
@@ -270,11 +270,12 @@ section h4 {
 }
 
 header h3 {
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
 }
 
 .project-card a {
   background-color: var(--red);
+  font-size: 1.2em;
   border-radius: 8px;
   padding: 6px 12px;
   text-decoration: none;
