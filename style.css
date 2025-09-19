@@ -66,7 +66,7 @@ nav {
   position: sticky;
   top: 0;
   width: 100vw;
-  background: var(--red);
+  background: var(--green);
   z-index: 1000;
   padding: 4px 0;
   min-height: 48px;
@@ -224,13 +224,14 @@ section h4 {
 
 .experience-card a {
   text-decoration: none;
-  color: var(--darker_green);
+  color: var(--green);
   font-weight: bold;
   font-size: 1.5em;
 }
 
 .experience-card a:hover {
   text-decoration: underline;
+  color: var(--darker_green);
 }
 
 /* =========================
@@ -284,6 +285,7 @@ header h3 {
 
 .project-card a:hover {
   text-decoration: underline;
+  background-color: var(--darker_red);
 }
 
 /* =========================
@@ -529,4 +531,8 @@ footer {
   color: var(--green);
   font-weight: bold;
   text-decoration: none;
+}
+
+#contact a.hover {
+  color: var(--darker_green);
 }
