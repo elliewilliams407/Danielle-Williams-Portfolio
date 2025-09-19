@@ -44,11 +44,11 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: var(--background);
+    background-color: var(--eggshell);
     color: var(--eggshell);
 }
 header {
-    background-color: var(--dark_purple);
+    background-color: var(--darker_lime);
     color: var(--eggshell);
     padding: 3rem 1rem;
     text-align: center;
@@ -86,6 +86,23 @@ p {
     padding: 1rem;
     border-left: 5px solid var(--green);
 }
+.reference h2 {
+    color: var(--dar);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--green);
+    padding-bottom: 0.3rem;
+}
+.reference p {
+    margin-bottom: 1rem;
+}
+
+.reference ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-bottom: 1rem;
+}
+
+
 footer {
     text-align: center;
     padding: 1rem;

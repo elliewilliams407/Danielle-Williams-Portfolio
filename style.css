@@ -3,18 +3,18 @@
    ========================= */
 :root {
   --eggshell: #FFFCE8;
-  --lime: hwb(103 53% 33%);
+  --lime: lab(67.2% -15.88 15.61);
   --green: #697921;
-  --dark_purple: #3e4716;
+  --dark_purple: #353f08;
   --red: #824C71;
 
   --background: #060f04;
 
-  --darker_eggshell: #a1a094;
+  --darker_eggshell: #8d8a6e;
   --darker_lime: #708269;
-  --darker_green: #4b561d;
-  --darker_dark_purple: #292f0f;
-  --darker_red: #58344d;
+  --darker_green: rgb(69, 79, 27);
+  --darker_dark_purple: #2b3306;
+  --darker_red: #4e2e45;
 
   /*--eggshell: #FFFCE8;
   --lime: #B8B42D;
@@ -175,7 +175,7 @@ section {
   padding: 20px;
   background: var(--darker_dark_purple);
   border-radius: 5px;
-  box-shadow: 0 0 10px var(--darker_red);
+  box-shadow: 0 0 15px var(--darker_red);
 }
 
 section h2 {
@@ -268,7 +268,7 @@ section h4 {
 .project-card a {
   background-color: var(--red);
   border-radius: 8px;
-  padding: 86px 12px;
+  padding: 8px 12px;
   text-decoration: none;
   color: var(--eggshell);
   font-weight: bold;
