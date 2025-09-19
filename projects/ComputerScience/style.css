@@ -37,13 +37,13 @@ body {
 font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 margin: 0;
 padding: 0;
-background: var(--eggshell);
+background: var(--darker_lime);
 color: #1c2721;
 line-height: 1.6;
 }
 
 header {
-background: linear-gradient(135deg, var(--darker_red), var(--red));
+background: var(--background);
 color: var(--eggshell);
 text-align: center;
 padding: 4rem 2rem 3rem;
@@ -72,6 +72,14 @@ padding: 2rem;
 background: var(--eggshell);
 border-radius: 16px;
 box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* optional: centers the image */
+  border-radius: 8px; /* optional: matches your rounded sections */
 }
 
 section h2 {
@@ -111,7 +119,7 @@ text-decoration: underline;
 display: inline-block;
 margin-top: 1rem;
 padding: 0.7rem 1.2rem;
-background: var(--lime);
+background: var(--darker_red);
 color: var(--eggshell);
 border-radius: 8px;
 transition: background 0.3s ease;

@@ -175,7 +175,7 @@ section {
   padding: 20px;
   background: var(--section-bg);
   border-radius: 5px;
-  box-shadow: 0 0 15px var(--darker_red);
+  box-shadow: 0 0 10px var(--darker_red);
 }
 
 section h2 {
@@ -261,7 +261,7 @@ section h4 {
   margin: 10px 0;
   padding: 15px;
   text-align: center;
-  background: var(--darker_green);
+  background: var(--green);
   box-shadow: var(--lime) 0px 0px 6px;
 }
 
@@ -383,7 +383,7 @@ section h4 {
     border-radius: 8px;
     margin: 20px 0;
     padding: 18px 10px;
-    font-size: 4em;
+    font-size: 1.2em;
   }
 }
 
@@ -401,7 +401,6 @@ footer {
    About Section
    ========================= */
 .about-container {
-  background-color: var(--section-bg); /* solid green background */
   color: var(--eggshell);         /* light text for contrast */
   display: flex;
   align-items: center;
