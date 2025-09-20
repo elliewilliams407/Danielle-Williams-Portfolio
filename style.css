@@ -231,7 +231,6 @@ section h4 {
 }
 
 .experience-card a:hover {
-  text-decoration: underline;
   color: var(--darker_green);
 }
 
@@ -266,7 +265,7 @@ section h4 {
   margin: 10px 0;
   padding: 15px;
   text-align: center;
-  background: var(--darker_blue);
+  background: var(--);
   box-shadow: var(--lime) 0px 0px 6px;
 }
 
@@ -287,7 +286,6 @@ section h4 {
 }
 
 .project-card a:hover {
-  text-decoration: underline;
   background-color: var(--darker_red);
 }
 
