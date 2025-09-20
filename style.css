@@ -67,7 +67,7 @@ nav {
   color: var(--text-darker);
   padding: 0.5rem 0.5rem;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 0.5rem;
   text-decoration: none;
   font-weight: bold;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
@@ -81,7 +81,7 @@ nav {
 
 
 nav ul {
-  font-size: 1.2rem;
+  font-size: 0.5rem;
   list-style: none;
   text-align: center;
   margin: 6px 0;
@@ -161,7 +161,7 @@ header p {
    ========================= */
 section {
   margin: 80px 0;
-  padding: 20px;
+  padding: 40px;
   background: var(--background);
   border-radius: 5px;
   box-shadow: 0 0 10px var(--darker_dark_purple);
@@ -293,8 +293,8 @@ section h4 {
 
 .volleyball-info {
   flex: 1 1 50%;
-  background: var(--section-bg);
-  color: var(--eggshell);
+  background: var(--darker_eggshell);
+  color: var(--text-darker);
   padding: 48px 40px 48px 60px;
   display: flex;
   flex-direction: column;
