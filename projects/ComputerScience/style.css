@@ -128,4 +128,5 @@ margin-top: 3rem;
 footer a {
 color: var(--eggshell);
 font-weight: 600;
+text-decoration: none;
 }
