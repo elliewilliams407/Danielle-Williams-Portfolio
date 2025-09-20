@@ -55,7 +55,7 @@ nav {
   background: var(--red);
   z-index: 1000;
   padding: 4px 0;
-  min-height: 35px;
+  min-height: 30px;
 }
 
 .resume-button {
@@ -65,7 +65,7 @@ nav {
   transform: translateY(-50%);
   background: var(--green);
   color: var(--text-darker);
-  padding: 0.3rem 0.3rem;
+  padding: 0.5rem 0.2rem;
   border-radius: 8px;
   font-size: 0.8rem;
   text-decoration: none;
