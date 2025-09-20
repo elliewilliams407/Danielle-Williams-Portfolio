@@ -116,7 +116,7 @@ footer {
     color: var(--eggshell);
 }
 a {
-    color: var(--text-darker);
+    color: var(--eggshell);
     text-decoration: none;
 }
 a:hover {

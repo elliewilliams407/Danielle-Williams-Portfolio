@@ -160,11 +160,11 @@ header p {
    Sections
    ========================= */
 section {
-  margin: 120px 60px;
+  margin: 180px;
   padding: 40px;
   background: var(--background);
   border-radius: 5px;
-  box-shadow: 0 0 10px var(--darker_dark_purple);
+  box-shadow: 0 0 15px var(--darker_dark_purple);
 }
 
 section h2 {
@@ -282,6 +282,7 @@ section h4 {
   padding: 0;
   border-radius: 5px;
   overflow: hidden;
+  box-shadow: 0 0 15px var(--darker_red);
 }
 
 .volleyball-content {
@@ -292,6 +293,7 @@ section h4 {
 }
 
 .volleyball-info {
+  font-family: 'Poppins', 'Roboto';
   flex: 1 1 50%;
   background: var(--eggshell);
   color: var(--text-darker);
@@ -323,6 +325,7 @@ section h4 {
 
 .volleyball-info li {
   margin-bottom: 8px;
+  font-size: 1.5em;
 }
 
 .volleyball-action {
