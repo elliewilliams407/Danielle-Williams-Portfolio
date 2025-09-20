@@ -55,7 +55,7 @@ nav {
   background: var(--red);
   z-index: 1000;
   padding: 4px 0;
-  min-height: 48px;
+  min-height: 35px;
 }
 
 .resume-button {
@@ -67,7 +67,7 @@ nav {
   color: var(--text-darker);
   padding: 0.5rem 0.5rem;
   border-radius: 8px;
-  font-size: 0.5rem;
+  font-size: 1rem;
   text-decoration: none;
   font-weight: bold;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
@@ -81,7 +81,7 @@ nav {
 
 
 nav ul {
-  font-size: 0.5rem;
+  font-size: 1rem;
   list-style: none;
   text-align: center;
   margin: 6px 0;
@@ -293,7 +293,7 @@ section h4 {
 
 .volleyball-info {
   flex: 1 1 50%;
-  background: var(--darker_eggshell);
+  background: var(--eggshell);
   color: var(--text-darker);
   padding: 48px 40px 48px 60px;
   display: flex;
@@ -304,6 +304,7 @@ section h4 {
 
 .volleyball-info h2 {
   font-family: 'Poppins', 'Roboto';
+  border-bottom: 2px solid var(--background);
   font-size: 3em;
   margin-bottom: 18px;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.7);

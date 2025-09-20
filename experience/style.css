@@ -34,6 +34,7 @@
   --text-darker: #1c1915;
   --header-bg: var(--background);
   --section-bg: #1c2721;
+  --section-bg2: #19221d;
 }
 
 /* =========================
@@ -45,7 +46,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--eggshell);
-    color: var(--eggshell);
+    color: var(--section-bg2);
 }
 header {
     background-color: var(--section-bg);
@@ -83,10 +84,10 @@ p {
     margin-bottom: 1rem;
 }
 .reference {
-    background-color: var(--darker_dark_purple);
+    background-color: var(--eggshell);
     padding: 1rem;
-    border-left: 5px solid var(--green);
-    color: var(--eggshell);
+    border-left: 7px solid var(--green);
+    color: var(--text-darker);
 }
 .reference h2 {
     margin-bottom: 1rem;
@@ -99,8 +100,13 @@ p {
 
 .reference ul {
     list-style-type: square;
-    padding-left: 20px;
+    padding-left: 10px;
     margin-bottom: 1rem;
+}
+
+.reference b {
+    color: var(--darker_red);
+    text-decoration: bold;
 }
 
 
