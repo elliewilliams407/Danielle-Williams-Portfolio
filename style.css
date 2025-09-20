@@ -1,41 +1,24 @@
-/* =========================
-   Color Palette & Variables
-   ========================= */
 :root {
-  --eggshell: #FFFCE8;
-  --lime: lab(67.2% -15.88 15.61);
-  --green: #697921;
-  --dark_purple: #353f08;
-  --red: #824C71;
-  --blue:#7bd9de;
+  --eggshell: #FAF7E8;        /* soft off-white */
+  --lime: #B5C934;            /* lively lime */
+  --green: #5E7524;           /* earthy olive green */
+  --dark_purple: #3C2E4D;     /* muted purple */
+  --red: #A35465;             /* soft brick red */
+  --blue: #67B8C1;            /* soft teal */
 
-  --background: #080901;
+  --background: #0C0D08;      /* near-black with green tint */
 
-  --darker_eggshell: #8d8a6e;
-  --darker_lime: #708269;
-  --darker_green: rgb(69, 79, 27);
-  --darker_dark_purple: #2b3306;
-  --darker_red: #4e2e45;
-  --darker_blue:#182511;
+  --darker_eggshell: #CFCBB6;
+  --darker_lime: #889A2B;
+  --darker_green: #47571B;
+  --darker_dark_purple: #2B2136;
+  --darker_red: #6D3C49;
+  --darker_blue: #406F75;
 
-  /*--eggshell: #FFFCE8;
-  --lime: #B8B42D;
-  --green: #697A21;
-  --dark_purple: #252525;
-  --red: #242424;
-
-  --background: #060f04;
-
-  --darker_eggshell: #fffce8c0;
-  --darker_lime: #b8b32dc2;
-  --darker_green: #697A21c0;
-  --darker_dark_purple: #323232;
-  --darker_red: #832623;
-  */
-  --text-dark: #1c1915;
-  --text-darker: #1c1915;
-  --header-bg: var(--background);
-  --section-bg: #1c2721;
+  /* Extra vars to fix missing references */
+  --text-dark: #1A1A1A;       /* neutral dark gray */
+  --text-darker: #0E0E0E;     /* even darker gray */
+  --section-bg: #1A1F14;      /* muted deep green background */
 }
 
 /* =========================
@@ -56,7 +39,7 @@ body {
   line-height: 1.6;
   color: var(--eggshell);
   background: var(--background);
-  padding: 0; /* Remove horizontal padding */
+  padding: 0;
 }
 
 /* =========================
@@ -74,11 +57,11 @@ nav {
 
 .resume-button {
   position: absolute;
-  top: 50%;                /* center vertically */
+  top: 50%;
   right: 40px;
   transform: translateY(-50%);
   background: var(--green);
-  color: var(--text-darker);
+  color: var(--eggshell);
   padding: 0.5rem 0.5rem;
   border-radius: 8px;
   font-size: 1rem;
@@ -92,7 +75,6 @@ nav {
 .resume-button:hover {
   background: var(--darker_green);
 }
-
 
 nav ul {
   font-size: 1.5rem;
@@ -109,12 +91,12 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: var(--text-dark);
+  color: var(--eggshell); /* fix: readable on red background */
   font-weight: bold;
 }
 
 nav a:hover {
-  color: var(--text-darker);
+  color: var(--darker_eggshell);
   text-decoration: underline;
 }
 
@@ -136,7 +118,7 @@ header {
   background: var(--background);
   background-size: cover;
   color: var(--eggshell);
-  height: 100vh; /* full viewport height */
+  height: 100vh;
   min-height: 400px;
   display: flex;
   flex-direction: column;
@@ -186,7 +168,6 @@ section h2 {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
   font-size: 3em;
   margin-bottom: 10px;
-  /*font-style: italic;*/
 }
 
 section h3 {
@@ -208,7 +189,7 @@ section h4 {
    ========================= */
 .experience-card {
   border: 1px solid var(--lime);
-  color: var(--text-darker);
+  color: var(--text-dark);
   border-radius: 25px;
   margin: 30px 0;
   padding: 15px;
@@ -252,15 +233,14 @@ section h4 {
   align-items: stretch;
 }
 
-  @media (max-width: 900px) {
-    .projects-container {
-      flex-direction: column;
-      align-items: center;
-    }
+@media (max-width: 900px) {
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
   }
+}
 
 .project-card {
-  /*border: 1px solid var(--text-dark);*/
   color: var(--eggshell);
   border-radius: 25px;
   margin: 10px 0;
@@ -304,7 +284,7 @@ section h4 {
   display: flex;
   min-height: 400px;
   width: 100%;
-  align-items: stretch; /* ensures both columns match height */
+  align-items: stretch;
 }
 
 .volleyball-info {
@@ -341,24 +321,23 @@ section h4 {
 }
 
 .volleyball-action {
-  font-family: 'Roboto', Arial, sans-serif;
   flex: 1 1 50%;
   position: relative;
   background: url('images/action_shot.png') center center/cover no-repeat;
   display: flex;
-  align-items: stretch; /* stretch child to full height */
-  justify-content: flex-end; /* push reflection to the right */
+  align-items: stretch;
+  justify-content: flex-end;
   height: auto;
 }
 
 .volleyball-reflection {
-  background: rgba(255, 252, 232, 0.60);
+  background: rgba(250, 247, 232, 0.70);
   border-radius: 0 8px 8px 0;
   width: 100%;
   max-width: 300px;
   height: 100%;
   margin: 0;
-  color: var(--text-darker);
+  color: var(--text-dark);
   text-align: left;
   box-shadow: 0 4px 16px rgba(0,0,0,0.2);
   display: flex;
@@ -405,14 +384,14 @@ footer {
   text-align: center;
   margin: 20px 0;
   font-size: 0.8em;
-  color: #777;
+  color: var(--darker_eggshell);
 }
 
 /* =========================
    About Section
    ========================= */
 .about-container {
-  color: var(--eggshell);         /* light text for contrast */
+  color: var(--eggshell);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -470,12 +449,12 @@ footer {
   color: var(--eggshell);
   border-radius: 8px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.2);
-  padding: 10px 14px;      /* smaller padding */
-  min-width: 180px;        /* smaller width */
+  padding: 10px 14px;
+  min-width: 180px;
   z-index: 20;
   text-align: left;
-  font-size: 0.9em;        /* smaller font */
-  opacity: 0.80;
+  font-size: 0.9em;
+  opacity: 0.85;
 }
 
 .profile-hover-container:hover .profile-hover-box {
@@ -486,7 +465,7 @@ footer {
   margin-top: 0;
   margin-bottom: 8px;
   font-size: 1.1em;
-  color: #fff;
+  color: var(--eggshell);
 }
 
 .profile-hover-box p {
@@ -494,11 +473,9 @@ footer {
   font-size: 0.98em;
 }
 
-
 /* =========================
    Contact Section
    ========================= */
-
 #contact {
   color: var(--eggshell);
   background: var(--background);
@@ -524,9 +501,9 @@ footer {
 }
 
 #contact ul {
-  padding-left: 40px; /* increase this value for more indentation */
+  padding-left: 40px;
   margin-bottom: 0;
-  color: var(--darker_eggshell)
+  color: var(--darker_eggshell);
 }
 
 #contact a {
@@ -535,6 +512,6 @@ footer {
   text-decoration: none;
 }
 
-#contact a.hover {
+#contact a:hover {
   color: var(--darker_green);
 }
