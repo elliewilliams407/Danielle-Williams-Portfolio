@@ -58,7 +58,7 @@ section {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 2rem;
-    color: #1c2721;
+    color: var(--eggshell);
 }
 
 .projects-grid {

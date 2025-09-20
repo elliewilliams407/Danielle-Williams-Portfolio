@@ -1,32 +1,20 @@
 :root {
   --eggshell: #FFFCE8;
-  --lime: hwb(103 53% 33%);
-  --green: #697A21;
-  --dark_purple: #3e4716;
+  --lime: lab(67.2% -15.88 15.61);
+  --green: #697921;
+  --dark_purple: #353f08;
   --red: #824C71;
+  --blue:#7bd9de;
 
-  --background: #060f04;
+  --background: #080901;
 
-  --darker_eggshell: #fffce8c0;
+  --darker_eggshell: #8d8a6e;
   --darker_lime: #708269;
-  --darker_green: #6a7a21;
-  --darker_dark_purple: #292f0f;
-  --darker_red: #58344d;
+  --darker_green: rgb(69, 79, 27);
+  --darker_dark_purple: #252627;
+  --darker_red: #4e2e45;
+  --darker_blue:#141e04;
 
-  /*--eggshell: #FFFCE8;
-  --lime: #B8B42D;
-  --green: #697A21;
-  --dark_purple: #252525;
-  --red: #242424;
-
-  --background: #060f04;
-
-  --darker_eggshell: #fffce8c0;
-  --darker_lime: #b8b32dc2;
-  --darker_green: #697A21c0;
-  --darker_dark_purple: #323232;
-  --darker_red: #832623;
-  */
   --text-dark: #1c1915;
   --text-darker: #1c1915;
   --header-bg: var(--background);
@@ -38,7 +26,7 @@ body {
     margin: 0;
     padding: 0;
     background: var(--darker_lime);
-    color: #1c2721;
+    color: var(--background);
     line-height: 1.6;
 }
 

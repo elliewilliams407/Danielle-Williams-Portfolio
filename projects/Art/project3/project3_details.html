@@ -3,21 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Create Your Creature | Portfolio</title>
+  <title>Heritage Project | Portfolio</title>
   <link rel="stylesheet" href="../../style.css">
   <style>
+      :root {
+    --eggshell: #FFFCE8;
+    --lime: lab(67.2% -15.88 15.61);
+    --green: #697921;
+    --dark_purple: #353f08;
+    --red: #824C71;
+    --blue:#7bd9de;
+
+    --background: #080901;
+
+    --darker_eggshell: #8d8a6e;
+    --darker_lime: #708269;
+    --darker_green: rgb(69, 79, 27);
+    --darker_dark_purple: #252627;
+    --darker_red: #4e2e45;
+    --darker_blue:#141e04;
+
+    --text-dark: #1c1915;
+    --text-darker: #1c1915;
+    --header-bg: var(--background);
+    --section-bg: #1c2721;
+  }
     body {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f7f9f8;
-      color: #1c2721;
+      background: #080901;
+      color: var(--eggshell);
       line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(135deg, var(--darker_red), var(--red));
-      color: #fff;
+      background: linear-gradient(135deg, var(--darker_red), var(--darker_red));
+      color: var(--eggshell);
       text-align: center;
       padding: 4rem 2rem 3rem;
     }
@@ -62,7 +84,7 @@
   }
 
   .gallery-item {
-      background: --var(eggshell);
+      background: var(--eggshell);
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -111,6 +133,13 @@
 
     .repo-link:hover {
       background: #1c2721;
+    }
+    
+    .caption {
+      padding: 1rem;
+      text-align: center;
+      font-size: 1rem;
+      color: #555;
     }
 
     footer {
