@@ -18,20 +18,6 @@
   --darker_red: #4e2e45;
   --darker_blue:#141e04;
 
-  /*--eggshell: #FFFCE8;
-  --lime: #B8B42D;
-  --green: #697A21;
-  --dark_purple: #252525;
-  --red: #242424;
-
-  --background: #060f04;
-
-  --darker_eggshell: #fffce8c0;
-  --darker_lime: #b8b32dc2;
-  --darker_green: #697A21c0;
-  --darker_dark_purple: #323232;
-  --darker_red: #832623;
-  */
   --text-dark: #1c1915;
   --text-darker: #1c1915;
   --header-bg: var(--background);
@@ -65,7 +51,7 @@ body {
 nav {
   position: sticky;
   top: 0;
-  width: 100vw;
+  width: 100%;
   background: var(--red);
   z-index: 1000;
   padding: 4px 0;
@@ -148,7 +134,7 @@ header {
 
 header h1 {
   color: var(--eggshell);
-  font-family: 'Poppins', 'Roboto', Arial, sans-serif;
+  font-family: 'Poppins', 'Roboto';
   font-weight: 800;
   font-style: italic;
   font-size: 5em;
@@ -182,7 +168,7 @@ section {
 }
 
 section h2 {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Poppins', 'Roboto';
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
   font-size: 3em;
   margin-bottom: 10px;
@@ -190,14 +176,14 @@ section h2 {
 }
 
 section h3 {
-  font-family: 'Poppins', 'Roboto', Arial, sans-serif;
+  font-family: 'Poppins', 'Roboto';
   font-size: 2em;
   margin-top: 2px;
   margin-bottom: 10px;
 }
 
 section h4 {
-  font-family: 'Poppins', 'Roboto', Arial, sans-serif;
+  font-family: 'Poppins', 'Roboto';
   font-size: 1.5em;
   margin-top: 2px;
   margin-bottom: 10px;
@@ -207,7 +193,7 @@ section h4 {
    Experience Cards
    ========================= */
 .experience-card {
-  border: 1px solid var(--lime);
+  border: 1px solid rgba(181,201,52,0.4);
   color: var(--text-darker);
   border-radius: 25px;
   margin: 30px 0;
@@ -266,7 +252,7 @@ section h4 {
   padding: 15px;
   text-align: center;
   background: var(--section-bg);
-  box-shadow: var(--lime) 0px 0px 6px;
+  box-shadow: rgba(181,201,52,0.4) 0px 0px 6px;
 }
 
 .project-card h3 {
@@ -317,7 +303,7 @@ section h4 {
 }
 
 .volleyball-info h2 {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Poppins', 'Roboto';
   font-size: 3em;
   margin-bottom: 18px;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
@@ -339,7 +325,7 @@ section h4 {
 }
 
 .volleyball-action {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Poppins', 'Roboto';
   flex: 1 1 50%;
   position: relative;
   background: url('images/action_shot.png') center center/cover no-repeat;
@@ -510,7 +496,7 @@ footer {
 #contact h2,
 #contact h3 {
   color: var(--eggshell);
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Poppins', 'Roboto';
   font-size: 2em;
   margin-bottom: 10px;
   font-style: italic;
