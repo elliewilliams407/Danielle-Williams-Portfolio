@@ -162,9 +162,9 @@ header p {
 section {
   margin: 80px 0;
   padding: 20px;
-  background: var(--darker_dark_purple);
+  background: var(--background);
   border-radius: 5px;
-  box-shadow: 0 0 10px var(--darker_blue);
+  box-shadow: 0 0 10px var(--darker_dark_purple);
 }
 
 section h2 {
@@ -293,7 +293,7 @@ section h4 {
 
 .volleyball-info {
   flex: 1 1 50%;
-  background: var(--darker_blue);
+  background: var(--section-bg);
   color: var(--eggshell);
   padding: 48px 40px 48px 60px;
   display: flex;
