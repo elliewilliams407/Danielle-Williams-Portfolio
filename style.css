@@ -201,6 +201,7 @@ section h4 {
   text-align: center;
   background: var(--eggshell);
   max-width: 1200px;
+  justify-content: center;
 
 }
 
