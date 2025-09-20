@@ -16,7 +16,7 @@
   --darker_green: rgb(69, 79, 27);
   --darker_dark_purple: #2b3306;
   --darker_red: #4e2e45;
-  --darker_blue:#143007;
+  --darker_blue:#182511;
 
   /*--eggshell: #FFFCE8;
   --lime: #B8B42D;
@@ -95,6 +95,7 @@ nav {
 
 
 nav ul {
+  font-size: 1.5rem;
   list-style: none;
   text-align: center;
   margin: 6px 0;
@@ -108,7 +109,6 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  text-size: 1.2 em;
   color: var(--text-dark);
   font-weight: bold;
 }
@@ -178,7 +178,7 @@ section {
   padding: 20px;
   background: var(--section-bg);
   border-radius: 5px;
-  box-shadow: 0 0 10px var(--darker_red);
+  box-shadow: 0 0 10px var(--darker_blue);
 }
 
 section h2 {
@@ -270,8 +270,8 @@ section h4 {
   box-shadow: var(--lime) 0px 0px 6px;
 }
 
-header h3 {
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+.project-card h3 {
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 1);
   border-bottom: 2px solid var(--green);
 }
 
