@@ -55,7 +55,7 @@ body {
   font-family: 'Roboto', 'Poppins', Arial, sans-serif;
   line-height: 1.6;
   color: var(--eggshell);
-  background: var(--bacwkground);
+  background: var(--background);
   padding: 0; /* Remove horizontal padding */
 }
 
@@ -108,6 +108,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
+  text-size: 1.2 em;
   color: var(--text-dark);
   font-weight: bold;
 }
