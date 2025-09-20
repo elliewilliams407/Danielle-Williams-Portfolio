@@ -160,7 +160,7 @@ header p {
    Sections
    ========================= */
 section {
-  margin: 180px;
+  margin: 120px 0px;
   padding: 40px;
   background: var(--background);
   border-radius: 5px;
