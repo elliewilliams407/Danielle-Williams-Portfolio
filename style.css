@@ -16,7 +16,7 @@
   --darker_green: rgb(69, 79, 27);
   --darker_dark_purple: #2b3306;
   --darker_red: #4e2e45;
-  --darker_blue:#182511;
+  --darker_blue:#141e04;
 
   /*--eggshell: #FFFCE8;
   --lime: #B8B42D;
@@ -95,7 +95,7 @@ nav {
 
 
 nav ul {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   list-style: none;
   text-align: center;
   margin: 6px 0;
