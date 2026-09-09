@@ -193,7 +193,7 @@ header {
 
 .bloom-tl { /*top left*/
   top: 30px;
-  left: 0px;
+  left: -5px;
   width: 127px;
   height: 133px;
   animation-delay: 0.1s;
@@ -259,7 +259,7 @@ header {
 
 .hero-content .tagline {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 2em;
+  font-size: 1.7em;
   color: var(--eggshell);
   margin: 0 0 2px 0;
   line-height: 1.2;
@@ -270,7 +270,7 @@ header {
   font-family: 'JetBrains Mono', monospace;
   font-size: 1.3em;
   color: var(--darker_eggshell);
-  margin: 0 0 34px 0;
+  margin: 0 0 40px 0;
   line-height: 1.2;
   letter-spacing: 0.5px;
   text-shadow: 1px 1px 1px var(--text-dark);
@@ -280,7 +280,7 @@ header {
   font-family: 'Roboto', sans-serif;
   font-style: italic;
   font-weight: 700;
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: var(--eggshell);
   max-width: 640px;
 }
