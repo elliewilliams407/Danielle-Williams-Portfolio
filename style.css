@@ -534,90 +534,211 @@ footer {
 }
 
 /* =========================
-   About Section
+   About Me — title + intro
    ========================= */
-.about-container {
-  color: var(--eggshell);         /* light text for contrast */
+.me-title {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.me-title-small {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--eggshell);
+}
+
+.me-title-big {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 4.5rem;
+  line-height: 1;
+  color: var(--eggshell);
+}
+
+.me-intro {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--eggshell);
+  max-width: 100%;
+  margin-bottom: 56px;
+}
+
+/* =========================
+   About Me — mind-map diagram
+   ========================= */
+.mindmap-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mindmap {
+  position: relative;
+  width: 1400px;
+  height: 760px;
+  margin: 0 auto;
+}
+
+.mindmap-photo {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 86%;
+  width: auto;
+  z-index: 2;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.5));
+}
+
+.mindmap-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.mm-box {
+  position: absolute;
+  box-sizing: border-box;
+  border: 2px solid var(--eggshell);
+  border-radius: 10px;
+  color: var(--eggshell);
+  font-family: 'Poppins', 'Roboto';
+  text-align: center;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+  justify-content: center;
+  padding: 14px 18px;
+  line-height: 1.3;
+  z-index: 3;
+  background: rgba(8, 9, 1, 0.55);
 }
 
-.about-text {
-  flex: 1;
-  color: var(--eggshell);
+.mm-fact {
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
-.about-text p {
-  font-size: 1.25em;
-  margin-bottom: 18px;
-  color: var(--eggshell);
+.mm-skill {
+  border-color: var(--green);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.15s ease;
 }
 
-.about-image {
-  flex: 1;
-  position: relative;
-  max-width: 350px;
+.mm-skill:hover,
+.mm-skill:focus-visible {
+  background: var(--green);
+  color: var(--background);
+  transform: translateY(-2px);
 }
 
-.about-image .shape {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  z-index: 0;
-  opacity: 0.6;
-  mix-blend-mode: multiply;
+.mm-name {
+  border-color: #8a4a2a;
+  border-width: 3px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 3rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.15s ease;
 }
 
-.about-image .profile {
-  position: relative;
-  width: 80%;
-  z-index: 1;
+.mm-name:hover,
+.mm-name:focus-visible {
+  background: var(--green);
+  color: var(--background);
+  transform: translateY(-2px);
 }
 
-/* Profile Hover Box */
-.profile-hover-container {
-  position: relative;
+.mm-cta {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: 'Roboto', 'Poppins';
+  padding: 30px 40px;
+}
+
+.mm-cta .highlight {
+  color: var(--green);
+  font-weight: 800;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* node positions (percent of the 1400x760 diagram canvas) */
+.node-artist          { left: 20%; top: 6%;  width: 13%; height: 17%; }
+.node-volleyball-fact  { left: 37%; top: 4%;  width: 24%; height: 12%; }
+.node-travel           { left: 64%; top: 4%;  width: 13%; height: 15%; }
+
+.node-git              { left: 35%; top: 23%; width: 11%; height: 9%; }
+.node-ml               { left: 24%; top: 27%; width: 14%; height: 9%; }
+.node-energy1          { left: 47%; top: 22%; width: 12%; height: 9%; }
+.node-excel            { left: 58%; top: 29%; width: 11%; height: 8%; }
+
+.node-name             { left: 32%; top: 32%; width: 27%; height: 14%; }
+
+.node-htmlcss          { left: 62%; top: 35%; width: 16%; height: 9%; }
+.node-sql              { left: 20%; top: 37%; width: 9%;  height: 8%; }
+.node-java             { left: 61%; top: 43%; width: 8%;  height: 8%; }
+.node-dataanalysis     { left: 22%; top: 46%; width: 12%; height: 9%; }
+.node-python           { left: 41%; top: 49%; width: 8%;  height: 8%; }
+.node-energy2          { left: 50%; top: 52%; width: 11%; height: 9%; }
+
+.node-catmom           { left: 20%; top: 54%; width: 11%; height: 9%; }
+.node-yoga             { left: 35%; top: 56%; width: 14%; height: 17%; }
+.node-cta              { left: 60%; top: 52%; width: 36%; height: 34%; }
+
+
+/* =========================
+   Placeholder skill/name pages
+   ========================= */
+.placeholder-page {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.placeholder-page h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.placeholder-page p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.placeholder-note {
+  color: var(--darker_eggshell);
+  font-style: italic;
+}
+
+.back-link {
   display: inline-block;
+  margin-top: 30px;
+  color: var(--green);
+  font-weight: bold;
+  text-decoration: none;
 }
 
-.profile-hover-box {
-  display: none;
-  position: absolute;
-  left: 60%;
-  bottom: -10px;
-  transform: translateX(-40%);
-  background: var(--dark_purple);
-  border: 3px solid var(--lime);
-  color: var(--eggshell);
-  border-radius: 8px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
-  padding: 10px 14px;      /* smaller padding */
-  min-width: 180px;        /* smaller width */
-  z-index: 20;
-  text-align: left;
-  font-size: 0.9em;        /* smaller font */
-  opacity: 0.80;
+.back-link:hover {
+  color: var(--darker_green);
 }
 
-.profile-hover-container:hover .profile-hover-box {
-  display: block;
-}
-
-.profile-hover-box h3 {
-  margin-top: 0;
-  margin-bottom: 8px;
-  font-size: 1.1em;
-  color: #fff;
-}
-
-.profile-hover-box p {
-  margin: 0 0 10px 0;
-  font-size: 0.98em;
-}
 
 
 /* =========================
