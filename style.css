@@ -192,8 +192,8 @@ header {
 }
 
 .bloom-tl { /*top left*/
-  top: -20px;
-  left: -35px;
+  top: 10px;
+  left: -10px;
   width: 127px;
   height: 133px;
   animation-delay: 0.1s;
