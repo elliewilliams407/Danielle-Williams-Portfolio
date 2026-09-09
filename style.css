@@ -192,8 +192,8 @@ header {
 }
 
 .bloom-tl { /*top left*/
-  top: 10px;
-  left: -10px;
+  top: 30px;
+  left: 0px;
   width: 127px;
   height: 133px;
   animation-delay: 0.1s;
@@ -222,13 +222,13 @@ header {
 }
 
 /* gentle continuous sway once settled */
-.bloom-tl img { animation: sway 9.5s ease-in-out 1.3s infinite; transform-origin: 20% 20%; }
-.bloom-tr img { animation: sway 10.5s ease-in-out 1.5s infinite; transform-origin: 70% 20%; }
-.bloom-bl img { animation: sway 11.5s ease-in-out 1.7s infinite; transform-origin: 30% 70%; }
+.bloom-tl img { animation: sway 4s ease-in-out 1.3s infinite; transform-origin: 20% 20%; }
+.bloom-tr img { animation: sway 5s ease-in-out 1.5s infinite; transform-origin: 70% 20%; }
+.bloom-bl img { animation: sway 6s ease-in-out 1.7s infinite; transform-origin: 30% 70%; }
 
 @keyframes sway {
   0%, 100% { transform: rotate(0deg); }
-  50%      { transform: rotate(0.8deg); }
+  50%      { transform: rotate(2deg); }
 }
 
 @media (prefers-reduced-motion: reduce) {
