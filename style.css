@@ -152,11 +152,18 @@ nav ul li a:hover::before {
 /* =========================
    Header / Hero
    ========================= */
+.top-screen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 400px;
+}
+
 header {
   position: relative;
   width: 100%;
-  height: 62vh;
-  min-height: 460px;
+  flex: 1 1 auto;
+  min-height: 0;
   overflow: hidden;
   background: var(--background);
 }
@@ -235,41 +242,41 @@ header {
 
 .hero-content h1 {
   font-family: 'Playfair Display', serif;
-  font-style: italic;
+  /*font-style: italic;*/
   font-weight: 800;
-  font-size: 3.6rem;
+  font-size: 5em;
   color: var(--eggshell);
-  margin: 0 0 16px 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  margin: 0 0 10px 0;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 }
 
 .hero-content .tagline {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 1.25rem;
+  font-size: 2em;
   color: var(--eggshell);
-  margin: 0 0 8px 0;
+  margin: 0 0 0 0;
+  text-shadow: 1px 1px 1px var(--text-dark);
 }
 
 .hero-content .subtagline {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.85rem;
+  font-size: 1.3em;
   color: var(--darker_eggshell);
   margin: 0 0 34px 0;
   letter-spacing: 0.5px;
+  text-shadow: 1px 1px 1px var(--text-dark);
 }
 
 .hero-content .welcome {
   font-family: 'Roboto', sans-serif;
   font-style: italic;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.2em;
   color: var(--eggshell);
   max-width: 640px;
 }
 
 @media (max-width: 768px) {
-  .hero-content h1 { font-size: 2.3rem; }
-  .hero-content .tagline { font-size: 1rem; }
   .bloom-tr { width: 160px; height: 252px; }
   .bloom-bl { width: 300px; height: 240px; }
 }
