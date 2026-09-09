@@ -32,7 +32,6 @@
    ========================= */
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body, h1, h2, p, ul, li {
@@ -47,12 +46,15 @@ body {
   color: var(--eggshell);
   background: var(--background);
   padding: 0; /* Remove horizontal padding */
-  overflow-x: hidden;
 }
 
 /* =========================
    Navigation
    ========================= */
+.page-content {
+  overflow-x: hidden;
+}
+
 nav {
   position: sticky;
   top: 0;
@@ -121,7 +123,7 @@ nav ul li a::before {
   content: ".";
   position: absolute;
   left: 0;
-  top: -3px;
+  bottom: 1px;
   opacity: 0;
   color: var(--eggshell);
   font-weight: 700;
@@ -190,10 +192,10 @@ header {
 }
 
 .bloom-tl { /*top left*/
-  top: -40px;
+  top: -20px;
   left: -35px;
-  width: 190px;
-  height: 200px;
+  width: 127px;
+  height: 133px;
   animation-delay: 0.1s;
 }
 
@@ -220,9 +222,9 @@ header {
 }
 
 /* gentle continuous sway once settled */
-.bloom-tl img { animation: sway 7s ease-in-out 1.3s infinite; transform-origin: 20% 20%; }
-.bloom-tr img { animation: sway 8.5s ease-in-out 1.5s infinite; transform-origin: 70% 20%; }
-.bloom-bl img { animation: sway 9.5s ease-in-out 1.7s infinite; transform-origin: 30% 70%; }
+.bloom-tl img { animation: sway 9.5s ease-in-out 1.3s infinite; transform-origin: 20% 20%; }
+.bloom-tr img { animation: sway 10.5s ease-in-out 1.5s infinite; transform-origin: 70% 20%; }
+.bloom-bl img { animation: sway 11.5s ease-in-out 1.7s infinite; transform-origin: 30% 70%; }
 
 @keyframes sway {
   0%, 100% { transform: rotate(0deg); }
@@ -248,7 +250,6 @@ header {
 
 .hero-content h1 {
   font-family: 'Playfair Display', serif;
-  font-style: italic;
   font-weight: 800;
   font-size: 5em;
   color: var(--eggshell);
@@ -260,7 +261,8 @@ header {
   font-family: 'JetBrains Mono', monospace;
   font-size: 2em;
   color: var(--eggshell);
-  margin: 0 0 10px 0;
+  margin: 0 0 2px 0;
+  line-height: 1.2;
   text-shadow: 1px 1px 1px var(--text-dark);
 }
 
@@ -269,6 +271,7 @@ header {
   font-size: 1.3em;
   color: var(--darker_eggshell);
   margin: 0 0 34px 0;
+  line-height: 1.2;
   letter-spacing: 0.5px;
   text-shadow: 1px 1px 1px var(--text-dark);
 }
@@ -277,7 +280,7 @@ header {
   font-family: 'Roboto', sans-serif;
   font-style: italic;
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: var(--eggshell);
   max-width: 640px;
 }
