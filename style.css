@@ -25,6 +25,9 @@
 
   --navy: #16324f;
   --darker_navy: #0e2138;
+
+  --leaf_green_opaque: #13501bd4;
+  --leaf_gray_outline: #747474;
 }
 
 /* =========================
@@ -307,7 +310,6 @@ section h2 {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
   font-size: 3em;
   margin-bottom: 10px;
-  /*font-style: italic;*/
 }
 
 section h3 {
@@ -562,7 +564,7 @@ footer {
   font-size: 1.15rem;
   line-height: 1.7;
   color: var(--eggshell);
-  max-width: 100%;
+  max-width: 50%;
   margin-bottom: 56px;
 }
 
@@ -602,29 +604,30 @@ footer {
 }
 
 .mm-box {
-  position: absolute;
-  box-sizing: border-box;
-  border: 2px solid var(--eggshell);
-  border-radius: 10px;
-  color: var(--eggshell);
-  font-family: 'Poppins', 'Roboto';
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 10px;
-  line-height: 1.3;
-  z-index: 3;
-  background: rgba(8, 9, 1, 0.55);
+    position: absolute;
+    box-sizing: border-box;
+    border: 3px solid var(--leaf_gray_outline);
+    /* border-radius: 10px; */
+    color: var(--eggshell);
+    font-family: 'Poppins', 'Roboto';
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 18px;
+    line-height: 1.3;
+    z-index: 3;
+    background: rgba(8, 9, 1, 0.55);
 }
 
+
 .mm-fact {
-  font-size: 1.3rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .mm-skill {
-  border-color: var(--green);
+  border-color: var(--darker_eggshell);
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
@@ -634,21 +637,21 @@ footer {
 
 .mm-skill:hover,
 .mm-skill:focus-visible {
-  background: var(--green);
+  background: var(--leaf_green_opaque);
   color: var(--background);
   transform: translateY(-2px);
 }
 
 .mm-name {
-  border-color: #8a4a2a;
-  border-width: 3px;
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-weight: 800;
-  font-size: 3rem;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background 0.25s ease, color 0.25s ease, transform 0.15s ease;
+    border-color: #f5c0a5;
+    border-width: 3px;
+    font-family: 'Playfair Display', serif;
+    /* font-style: italic; */
+    font-weight: 800;
+    font-size: 4rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.25s ease, color 0.25s ease, transform 0.15s ease;
 }
 
 .mm-name:hover,
@@ -675,27 +678,27 @@ footer {
 }
 
 /* node positions (percent of the 1400x760 diagram canvas) */
-.node-artist          { left: 20%; top: 6%;  width: 13%; height: 17%; }
-.node-volleyball-fact  { left: 37%; top: 4%;  width: 24%; height: 12%; }
-.node-travel           { left: 64%; top: 4%;  width: 13%; height: 15%; }
+.node-artist          { left: 22%; top: 3%;  width: 9%; height: 19%; }
+.node-volleyball-fact  { left: 41%; top: 7%;  width: 24%; height: 11%; }
+.node-travel           { left: 71%; top: 3%;  width: 10%; height: 16%; }
 
-.node-git              { left: 35%; top: 23%; width: 11%; height: 9%; }
-.node-ml               { left: 24%; top: 27%; width: 14%; height: 9%; }
-.node-energy1          { left: 47%; top: 22%; width: 12%; height: 9%; }
-.node-excel            { left: 58%; top: 29%; width: 11%; height: 8%; }
+.node-git              { left: 39%; top: 21%; width: 10%; height: 6%; }
+.node-ml               { left: 28%; top: 25%; width: 9%; height: 9%; }
+.node-energy1          { left: 51%; top: 22%; width: 8%; height: 9%; }
+.node-excel            { left: 65%; top: 31%; width: 11%; height: 5%; }
 
-.node-name             { left: 32%; top: 32%; width: 27%; height: 14%; }
+.node-name             { left: 37%; top: 35%; width: 22%; height: 12%; }
 
-.node-htmlcss          { left: 62%; top: 35%; width: 16%; height: 9%; }
-.node-sql              { left: 20%; top: 37%; width: 9%;  height: 8%; }
-.node-java             { left: 61%; top: 43%; width: 8%;  height: 8%; }
-.node-dataanalysis     { left: 22%; top: 46%; width: 12%; height: 9%; }
-.node-python           { left: 41%; top: 49%; width: 8%;  height: 8%; }
-.node-energy2          { left: 50%; top: 52%; width: 11%; height: 9%; }
+.node-htmlcss          { left: 63%; top: 38%; width: 18%; height: 5%; }
+.node-sql              { left: 22%; top: 43%; width: 7%;  height: 5%; }
+.node-java             { left: 61%; top: 47%; width: 8%;  height: 5%; }
+.node-dataanalysis     { left: 26%; top: 50%; width: 12%; height: 6%; }
+.node-python           { left: 43%; top: 56%; width: 7%;  height: 5%; }
+.node-energy2          { left: 51%; top: 58%; width: 9%; height: 9%; }
 
-.node-catmom           { left: 20%; top: 54%; width: 11%; height: 9%; }
-.node-yoga             { left: 35%; top: 56%; width: 14%; height: 17%; }
-.node-cta              { left: 60%; top: 52%; width: 36%; height: 34%; }
+.node-catmom           { left: 24%; top: 59%; width: 10%; height: 15%; }
+.node-yoga             { left: 36%; top: 66%; width: 14%; height: 19%; }
+.node-cta              { left: 68%; top: 60%; width: 27%; height: 21%; }
 
 
 /* =========================
