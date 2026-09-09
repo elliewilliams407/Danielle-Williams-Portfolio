@@ -22,6 +22,9 @@
   --text-darker: #1c1915;
   --header-bg: var(--background);
   --section-bg: #1c2721;
+
+  --navy: #16324f;
+  --darker_navy: #0e2138;
 }
 
 /* =========================
@@ -52,10 +55,11 @@ nav {
   position: sticky;
   top: 0;
   width: 100%;
-  background: var(--red);
+  background: var(--background);
   z-index: 1000;
-  padding: 4px 0;
+  padding: 20px 0;
   min-height: 30px;
+  border-bottom: 1px solid rgba(255, 252, 232, 0.08);
 }
 
 .resume-button {
@@ -63,97 +67,211 @@ nav {
   top: 50%;                /* center vertically */
   right: 40px;
   transform: translateY(-50%);
-  background: var(--green);
-  color: var(--text-darker);
-  padding: 0.2rem 0.5rem;
+  background: var(--navy);
+  color: var(--eggshell);
+  padding: 8px 16px;
   border-radius: 8px;
-  font-size: 0.8rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
   text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
   transition: background 0.3s;
   z-index: 10;
 }
 
 .resume-button:hover {
-  background: var(--darker_green);
+  background: var(--darker_navy);
 }
 
-
 nav ul {
-  font-size: 0.8rem;
   list-style: none;
   text-align: center;
-  margin: 6px 0;
+  margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 42px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.05rem;
 }
 
 nav ul li {
   display: inline;
-  margin: 0 10px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: var(--text-dark);
-  font-weight: bold;
+  color: var(--darker_eggshell);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding-left: 13px;
+  display: inline-block;
+  transition: color 0.2s ease;
 }
 
-nav a:hover {
-  color: var(--text-darker);
-  text-decoration: underline;
+/* the "." that appears before the "/" on hover, turning /home into ./home */
+nav ul li a::before {
+  content: ".";
+  position: absolute;
+  left: 0;
+  top: -3px;
+  opacity: 0;
+  color: var(--eggshell);
+  font-weight: 700;
+  transform: translateX(-3px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: var(--eggshell);
+}
+
+nav ul li a.active::before,
+nav ul li a:hover::before {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /* Responsive Navigation */
 @media (max-width: 768px) {
   nav ul {
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px 24px;
+    padding: 0 70px;
   }
-  nav ul li {
-    margin-bottom: 10px;
+  .resume-button {
+    right: 16px;
+    font-size: 0.75rem;
+    padding: 6px 12px;
   }
 }
 
 /* =========================
-   Header
+   Header / Hero
    ========================= */
 header {
+  position: relative;
+  width: 100%;
+  height: 62vh;
+  min-height: 460px;
+  overflow: hidden;
   background: var(--background);
-  background-size: cover;
-  color: var(--eggshell);
-  height: 100vh; /* full viewport height */
-  min-height: 400px;
+}
+
+/* -- flower cluster art -- */
+.bloom {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  animation: bloomIn 1.2s ease-out forwards;
+}
+
+.bloom img {
+  display: block;
+  height: 100%;
+  width: auto;
+}
+
+.bloom-tl {
+  top: -40px;
+  left: -35px;
+  width: 190px;
+  height: 200px;
+  animation-delay: 0.1s;
+}
+
+.bloom-tr {
+  top: -50px;
+  right: -60px;
+  width: 241px;
+  height: 380px;
+  animation-delay: 0.3s;
+}
+
+.bloom-bl {
+  bottom: -90px;
+  left: -110px;
+  width: 460px;
+  height: 368px;
+  animation-delay: 0.45s;
+}
+
+@keyframes bloomIn {
+  0%   { opacity: 0; transform: scale(0.9) rotate(-3deg); }
+  60%  { opacity: 1; }
+  100% { opacity: 0.95; transform: scale(1) rotate(0deg); }
+}
+
+/* gentle continuous sway once settled */
+.bloom-tl img { animation: sway 7s ease-in-out 1.3s infinite; transform-origin: 20% 20%; }
+.bloom-tr img { animation: sway 8.5s ease-in-out 1.5s infinite; transform-origin: 70% 20%; }
+.bloom-bl img { animation: sway 9.5s ease-in-out 1.7s infinite; transform-origin: 30% 70%; }
+
+@keyframes sway {
+  0%, 100% { transform: rotate(0deg); }
+  50%      { transform: rotate(0.8deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bloom, .bloom img { animation: none !important; opacity: 0.95 !important; }
+}
+
+/* -- hero text -- */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  position: relative;
+  padding: 0 24px;
 }
 
-header h1 {
-  color: var(--eggshell);
-  font-family: 'Poppins', 'Roboto';
-  font-weight: 800;
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
   font-style: italic;
-  font-size: 5em;
-  margin-bottom: 10px;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+  font-weight: 800;
+  font-size: 3.6rem;
+  color: var(--eggshell);
+  margin: 0 0 16px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-header h2 {
-  font-size: 2em;
-  text-shadow: 1px 1px 1px var(--text-dark);
+.hero-content .tagline {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.25rem;
+  color: var(--eggshell);
+  margin: 0 0 8px 0;
 }
 
-header h3 {
-  font-size: 1.3em;
-  text-shadow: 1px 1px 1px var(--text-dark);
+.hero-content .subtagline {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--darker_eggshell);
+  margin: 0 0 34px 0;
+  letter-spacing: 0.5px;
 }
 
-header p {
-  font-size: 1.2em;
+.hero-content .welcome {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--eggshell);
+  max-width: 640px;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 { font-size: 2.3rem; }
+  .hero-content .tagline { font-size: 1rem; }
+  .bloom-tr { width: 160px; height: 252px; }
+  .bloom-bl { width: 300px; height: 240px; }
 }
 
 /* =========================
@@ -281,7 +399,7 @@ section h4 {
 /* =========================
    Volleyball Section
    ========================= */
-#projects-volleyball {
+#volleyball {
   padding: 0;
   border-radius: 5px;
   overflow: hidden;
