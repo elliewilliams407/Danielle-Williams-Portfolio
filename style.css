@@ -89,26 +89,25 @@ nav {
 nav ul {
   list-style: none;
   text-align: center;
-  margin: 0;
+  margin: 6px 0;
   padding: 0;
   display: flex;
   justify-content: center;
-  gap: 42px;
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.8rem;
 }
 
 nav ul li {
   display: inline;
+  margin: 0 10px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: var(--darker_eggshell);
-  font-weight: 500;
+  font-weight: bold;
   letter-spacing: 0.5px;
   position: relative;
-  padding-left: 13px;
   display: inline-block;
   transition: color 0.2s ease;
 }
@@ -165,8 +164,8 @@ nav ul li a:hover::before {
 header {
   position: relative;
   width: 100%;
-  height: calc(100vh - 70px);
-  min-height: 330px;
+  height: 100vh; /* full viewport height */
+  min-height: 400px;
   overflow: hidden;
   background: var(--background);
 }
@@ -195,7 +194,7 @@ header {
 }
 
 .bloom-tr { /*top right*/
-  top: -100px;
+  top: -50px;
   right: -60px;
   width: 160px;
   height: 253px;
