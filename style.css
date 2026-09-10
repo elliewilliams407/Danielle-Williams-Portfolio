@@ -627,7 +627,7 @@ footer {
 }
 
 .mm-skill {
-  border-color: var(--darker_eggshell);
+  border-color: var(--leaf_gray_outline);
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
@@ -656,7 +656,7 @@ footer {
 
 .mm-name:hover,
 .mm-name:focus-visible {
-  background: var(--green);
+  background: var(--leaf_green_opaque);
   color: var(--background);
   transform: translateY(-2px);
 }
@@ -675,7 +675,7 @@ footer {
 
 .underline {
   text-decoration: underline;
-}
+}    
 
 /* node positions (percent of the 1400x760 diagram canvas) */
 .node-artist          { left: 22%; top: 3%;  width: 9%; height: 19%; }
@@ -687,14 +687,14 @@ footer {
 .node-energy1          { left: 51%; top: 22%; width: 8%; height: 9%; }
 .node-excel            { left: 65%; top: 31%; width: 11%; height: 5%; }
 
-.node-name             { left: 37%; top: 35%; width: 22%; height: 12%; }
+.node-name             { left: 37%; top: 35%; width: 24%; height: 11%; }
 
 .node-htmlcss          { left: 63%; top: 38%; width: 18%; height: 5%; }
 .node-sql              { left: 22%; top: 43%; width: 7%;  height: 5%; }
 .node-java             { left: 61%; top: 47%; width: 8%;  height: 5%; }
 .node-dataanalysis     { left: 26%; top: 50%; width: 12%; height: 6%; }
 .node-python           { left: 43%; top: 56%; width: 7%;  height: 5%; }
-.node-energy2          { left: 51%; top: 58%; width: 9%; height: 9%; }
+.node-energy2          { left: 51%; top: 58%; width: 8%; height: 9%; }
 
 .node-catmom           { left: 24%; top: 59%; width: 10%; height: 15%; }
 .node-yoga             { left: 36%; top: 66%; width: 14%; height: 19%; }
