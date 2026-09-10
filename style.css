@@ -272,7 +272,7 @@ header {
 .hero-content .subtagline {
   font-family: 'JetBrains Mono', monospace;
   font-size: 1.3em;
-  color: var(--darker_eggshell);
+  color: var(--leaf_gray_outline);
   margin: 0 0 40px 0;
   line-height: 1.2;
   letter-spacing: 0.5px;
