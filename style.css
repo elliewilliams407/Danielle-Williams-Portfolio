@@ -307,7 +307,7 @@ header {
    ========================= */
 section {
   margin: 450px 0px;
-  padding: 40px;
+  padding: 40px 40px 100px 40px;
   background: var(--eggshell);
   /*box-shadow: 0 0 15px var(--darker_dark_purple);*/
   align-items: center;
