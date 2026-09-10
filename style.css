@@ -196,7 +196,7 @@ header {
 }
 
 .bloom-tl { /*top left*/
-  top: 30px;
+  top: 51px;
   left: -5px;
   width: 127px;
   height: 133px;
@@ -204,7 +204,7 @@ header {
 }
 
 .bloom-tr { /*top right*/
-  top: 40px;
+  top: 71px;
   right: -90px;
   width: 300px;
   height: 474px;
@@ -301,7 +301,7 @@ section {
   padding: 40px;
   background: var(--background);
   border-radius: 5px;
-  box-shadow: 0 0 15px var(--darker_dark_purple);
+  /*box-shadow: 0 0 15px var(--darker_dark_purple);*/
   align-items: center;
 }
 
