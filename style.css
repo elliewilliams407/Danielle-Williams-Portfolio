@@ -262,7 +262,7 @@ header {
 
 .hero-content .tagline {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 1.7em;
+  font-size: 1.8em;
   color: var(--eggshell);
   margin: 0 0 2px 0;
   line-height: 1.2;
@@ -271,21 +271,20 @@ header {
 
 .hero-content .subtagline {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 1.3em;
+  font-size: 1em;
   color: var(--leaf_gray_outline);
-  margin: 0 0 40px 0;
+  margin: 0 0 80px 0;
   line-height: 1.2;
   letter-spacing: 0.5px;
   text-shadow: 1px 1px 1px var(--text-dark);
 }
 
 .hero-content .welcome {
-  font-family: 'Roboto', sans-serif;
-  font-style: italic;
+  font-family: 'Playfair Display', serif;
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1.25em;
   color: var(--eggshell);
-  max-width: 640px;
+  max-width: 700px;
 }
 
 @media (max-width: 768px) {
@@ -564,7 +563,7 @@ footer {
   font-size: 1.15rem;
   line-height: 1.7;
   color: var(--eggshell);
-  max-width: 50%;
+  max-width: 65%;
   margin-bottom: 56px;
 }
 
@@ -609,7 +608,7 @@ footer {
     border: 3px solid var(--leaf_gray_outline);
     /* border-radius: 10px; */
     color: var(--eggshell);
-    font-family: 'Poppins', 'Roboto';
+    font-family: 'JetBrains Mono', monospace;
     text-align: center;
     display: flex;
     align-items: center;
@@ -645,10 +644,10 @@ footer {
 .mm-name {
     border-color: #f5c0a5;
     border-width: 3px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'JetBrains Mono', monospace;
     /* font-style: italic; */
     font-weight: 800;
-    font-size: 4rem;
+    font-size: 4.5rem;
     text-decoration: none;
     cursor: pointer;
     transition: background 0.25s ease, color 0.25s ease, transform 0.15s ease;
@@ -675,14 +674,14 @@ footer {
 
 .underline {
   text-decoration: underline;
-}    
+}        
 
 /* node positions (percent of the 1400x760 diagram canvas) */
 .node-artist          { left: 22%; top: 3%;  width: 9%; height: 19%; }
 .node-volleyball-fact  { left: 41%; top: 7%;  width: 24%; height: 11%; }
 .node-travel           { left: 71%; top: 3%;  width: 10%; height: 16%; }
 
-.node-git              { left: 39%; top: 21%; width: 10%; height: 6%; }
+.node-git              { left: 39%; top: 20%; width: 10%; height: 7%; }
 .node-ml               { left: 28%; top: 25%; width: 9%; height: 9%; }
 .node-energy1          { left: 51%; top: 22%; width: 8%; height: 9%; }
 .node-excel            { left: 65%; top: 31%; width: 11%; height: 5%; }
@@ -696,7 +695,7 @@ footer {
 .node-python           { left: 43%; top: 56%; width: 7%;  height: 5%; }
 .node-energy2          { left: 51%; top: 58%; width: 8%; height: 9%; }
 
-.node-catmom           { left: 24%; top: 59%; width: 10%; height: 15%; }
+.node-catmom           { left: 23%; top: 59%; width: 11%; height: 14%; }
 .node-yoga             { left: 36%; top: 66%; width: 14%; height: 19%; }
 .node-cta              { left: 68%; top: 60%; width: 27%; height: 21%; }
 
