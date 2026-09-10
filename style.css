@@ -220,7 +220,7 @@ header {
 }
 
 .bloom-br { /*bottom right*/
-    top: 972px;
+    top: 978px;
     right: -15px;
     width: 127px;
     height: 143px;
@@ -237,6 +237,7 @@ header {
 .bloom-tl img { animation: sway 4s ease-in-out 1.3s infinite; transform-origin: 20% 20%; }
 .bloom-tr img { animation: sway 5s ease-in-out 1.5s infinite; transform-origin: 70% 20%; }
 .bloom-bl img { animation: sway 6s ease-in-out 1.7s infinite; transform-origin: 30% 70%; }
+.bloom-br img { animation: sway 3s ease-in-out 1.3s infinite; transform-origin: 20% 20%; }
 
 @keyframes sway {
   0%, 100% { transform: rotate(0deg); }
@@ -363,6 +364,150 @@ section h4 {
 }
 
 .experience-card a:hover {
+  color: var(--darker_green);
+}
+
+/* =========================
+   Professional Experience — Timeline
+   ========================= */
+.exp-timeline-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 40px 0 20px;
+}
+
+.exp-timeline {
+  position: relative;
+  width: 1400px;
+  height: 560px;
+  margin: 0 auto;
+}
+
+.exp-bar {
+  position: absolute;
+  top: 220px;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  border: 3px solid var(--leaf_gray_outline);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--eggshell);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+.exp-bar-cell {
+  flex: 1;
+  border-right: 2px solid var(--background);
+}
+
+.exp-bar-cell:last-child {
+  border-right: none;
+}
+
+.exp-year-label {
+  position: absolute;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--eggshell);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.exp-node-circle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 3px solid var(--leaf_gray_outline);
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+
+.exp-node-circle.milestone {
+  background: var(--red);
+}
+
+.exp-node-circle.job {
+  background: var(--green);
+}
+
+.exp-node-line {
+  position: absolute;
+  width: 2px;
+  background: var(--leaf_gray_outline);
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.exp-milestone-box {
+  position: absolute;
+  width: 150px;
+  transform: translateX(-50%);
+  border: 3px solid var(--leaf_gray_outline);
+  background: var(--leaf_center);
+  color: var(--text-darker);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-align: center;
+  padding: 14px 10px;
+  border-radius: 4px;
+  z-index: 3;
+}
+
+.exp-job-card {
+  position: absolute;
+  width: 260px;
+  transform: translateX(-50%);
+  border: 1px solid rgba(181, 201, 52, 0.4);
+  border-radius: 18px;
+  background: var(--eggshell);
+  color: var(--text-darker);
+  text-align: center;
+  padding: 14px;
+  z-index: 3;
+}
+
+.exp-job-card img {
+  max-width: 60px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 6px;
+}
+
+.exp-job-card h4 {
+  font-family: 'Poppins', 'Roboto';
+  font-size: 1.05rem;
+  margin: 0 0 4px 0;
+}
+
+.exp-job-card .exp-job-dates {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.exp-job-card p.exp-job-blurb {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.exp-job-card a {
+  text-decoration: none;
+  color: var(--green);
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.exp-job-card a:hover {
   color: var(--darker_green);
 }
 
@@ -652,9 +797,9 @@ footer {
 .mm-name {
     border-color: var(--leaf_gray_outline);
     border-width: 5px;
+    color: vr(--eggshell);
     font-family: 'Playfair Display', serif;
     background: var(--leaf_center);
-    color: var(--eggshell);
     /* font-style: italic; */
     font-weight: 800;
     font-size: 4.5rem;

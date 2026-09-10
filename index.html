@@ -127,21 +127,73 @@ document.addEventListener('DOMContentLoaded', function () {
         </section>
 
         <section id="experience">
-            <h2>Professional Experience</h2>
+            <h2 class="me-title"><span class="me-title-small">About my professional</span> <span class="me-title-big">experience</span></h2>
 
-            <div class="experience-card">
-                <img src="images/woodmac.png" alt="Wood Mackenzie Logo">
-                    <h3>Power & Renewables Co-Op</h3>
-                    <p><b>January 2025 - June 2025</b></p>
-                    <p>A six month, full-time data science Co-Op at <b>Wood Mackenzie</b>.</p>
-                    <a href="experience/WoodMac/woodmac_details.html">Learn More</a>
-            </div>      
-            <div class="experience-card">
-                <img src="images/unifirst.png" alt="UniFirst Logo"> 
-                    <h3>Environmental Compliance Co-Op</h3>
-                    <p><b>January 2024 - June 2024</b></p>
-                    <p>A six month, full-time environmental engineering Co-Op at <b>UniFirst Corporation</b>.</p>
-                    <a href="experience/UniFirst/unifirst_details.html">Learn More</a>
+            <div class="exp-timeline-wrap">
+              <div class="exp-timeline">
+
+                <!-- the six-year bar: 2022 - 2027 -->
+                <div class="exp-bar">
+                  <div class="exp-bar-cell"></div>
+                  <div class="exp-bar-cell"></div>
+                  <div class="exp-bar-cell"></div>
+                  <div class="exp-bar-cell"></div>
+                  <div class="exp-bar-cell"></div>
+                  <div class="exp-bar-cell"></div>
+                </div>
+
+                <!-- Year labels: 2022, 2023, 2027 sit below; 2024, 2025, 2026 sit above -->
+                <div class="exp-year-label" style="left:117px; top:294px;">2022</div>
+                <div class="exp-year-label" style="left:350px; top:294px;">2023</div>
+                <div class="exp-year-label" style="left:583px; top:176px;">2024</div>
+                <div class="exp-year-label" style="left:817px; top:176px;">2025</div>
+                <div class="exp-year-label" style="left:1050px; top:176px;">2026</div>
+                <div class="exp-year-label" style="left:1283px; top:294px;">2027</div>
+
+                <!-- Milestone: begins college (end of 2022) -->
+                <div class="exp-node-line" style="left:210px; top:158px; height:62px;"></div>
+                <div class="exp-node-circle milestone" style="left:210px; top:220px;"></div>
+                <div class="exp-milestone-box" style="left:210px; top:90px;">BEGINS COLLEGE</div>
+
+                <!-- Milestone: graduates college (start of 2027) -->
+                <div class="exp-node-line" style="left:1190px; top:158px; height:62px;"></div>
+                <div class="exp-node-circle milestone" style="left:1190px; top:220px;"></div>
+                <div class="exp-milestone-box" style="left:1190px; top:90px;">GRADUATES COLLEGE</div>
+
+                <!-- Job: UniFirst (start of 2024) -->
+                <div class="exp-node-line" style="left:460px; top:284px; height:46px;"></div>
+                <div class="exp-node-circle job" style="left:460px; top:284px;"></div>
+                <div class="exp-job-card" style="left:460px; top:330px;">
+                  <img src="images/unifirst.png" alt="UniFirst Logo">
+                  <h4>Environmental Compliance Co-Op</h4>
+                  <p class="exp-job-dates">January 2024 – June 2024</p>
+                  <p class="exp-job-blurb">A six month, full-time environmental engineering Co-Op at <b>UniFirst Corporation</b>.</p>
+                  <a href="experience/UniFirst/unifirst_details.html">Learn More</a>
+                </div>
+
+                <!-- Job: Wood Mackenzie (start of 2025) -->
+                <div class="exp-node-line" style="left:750px; top:284px; height:46px;"></div>
+                <div class="exp-node-circle job" style="left:750px; top:284px;"></div>
+                <div class="exp-job-card" style="left:750px; top:330px;">
+                  <img src="images/woodmac.png" alt="Wood Mackenzie Logo">
+                  <h4>Power &amp; Renewables Co-Op</h4>
+                  <p class="exp-job-dates">January 2025 – June 2025</p>
+                  <p class="exp-job-blurb">A six month, full-time data science Co-Op at <b>Wood Mackenzie</b>.</p>
+                  <a href="experience/WoodMac/woodmac_details.html">Learn More</a>
+                </div>
+
+                <!-- Job: NuWave (middle of 2026) -->
+                <div class="exp-node-line" style="left:1050px; top:284px; height:46px;"></div>
+                <div class="exp-node-circle job" style="left:1050px; top:284px;"></div>
+                <div class="exp-job-card" style="left:1050px; top:330px;">
+                  <img src="images/nuwave.png" alt="NuWave Logo">
+                  <h4>Energy Engineer Co-Op</h4>
+                  <p class="exp-job-dates">January 2026 – August 2026</p>
+                  <p class="exp-job-blurb">An eight month, full-time energy engineering Co-Op at <b>NuWave</b>.</p>
+                  <a href="experience/NuWave/nuwave_details.html">Learn More</a>
+                </div>
+
+              </div>
             </div>
         </section>
 
