@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function () {
         </section>
 
         <section id="experience">
-            <h2 class="me-title"><span class="me-title-small">About my</span> <span class="me-title-big">experience</span></h2>
+            <h2 class="me-title"><span class="me-title-small">About my professional</span> <span class="me-title-big">experience</span></h2>
 
             <div class="exp-timeline-wrap">
               <div class="exp-timeline">
@@ -143,27 +143,27 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
 
                 <!-- Year labels: 2022, 2023, 2027 sit below; 2024, 2025, 2026 sit above -->
-                <div class="exp-year-label" style="left:117px; top:294px;">2022</div>
-                <div class="exp-year-label" style="left:350px; top:294px;">2023</div>
-                <div class="exp-year-label" style="left:583px; top:176px;">2024</div>
-                <div class="exp-year-label" style="left:817px; top:176px;">2025</div>
-                <div class="exp-year-label" style="left:1050px; top:176px;">2026</div>
-                <div class="exp-year-label" style="left:1283px; top:294px;">2027</div>
+                <div class="exp-year-label" style="left:8.3%; top:60%;">2022</div>
+                <div class="exp-year-label" style="left:25%; top:60%;">2023</div>
+                <div class="exp-year-label" style="left:41.7%; top:31%;">2024</div>
+                <div class="exp-year-label" style="left:58.3%; top:31%;">2025</div>
+                <div class="exp-year-label" style="left:75%; top:31%;">2026</div>
+                <div class="exp-year-label" style="left:91.7%; top:60%;">2027</div>
 
                 <!-- Milestone: begins college (end of 2022) -->
-                <div class="exp-node-line" style="left:210px; top:158px; height:62px;"></div>
-                <div class="exp-node-circle milestone" style="left:210px; top:220px;"></div>
-                <div class="exp-milestone-box" style="left:210px; top:90px;">BEGINS COLLEGE</div>
+                <div class="exp-node-line" style="left:15%; top:25%; height:22%;"></div>
+                <div class="exp-node-circle milestone" style="left:15%; top:47%;"></div>
+                <div class="exp-milestone-box" style="left:15%; top:8%;">BEGINS COLLEGE</div>
 
                 <!-- Milestone: graduates college (start of 2027) -->
-                <div class="exp-node-line" style="left:1190px; top:158px; height:62px;"></div>
-                <div class="exp-node-circle milestone" style="left:1190px; top:220px;"></div>
-                <div class="exp-milestone-box" style="left:1190px; top:90px;">GRADUATES COLLEGE</div>
+                <div class="exp-node-line" style="left:85%; top:25%; height:22%;"></div>
+                <div class="exp-node-circle milestone" style="left:85%; top:47%;"></div>
+                <div class="exp-milestone-box" style="left:85%; top:8%;">GRADUATES COLLEGE</div>
 
                 <!-- Job: UniFirst (start of 2024) -->
-                <div class="exp-node-line" style="left:460px; top:284px; height:46px;"></div>
-                <div class="exp-node-circle job" style="left:460px; top:284px;"></div>
-                <div class="exp-job-card" style="left:460px; top:330px;">
+                <div class="exp-node-line" style="left:32.9%; top:60%; height:15%;"></div>
+                <div class="exp-node-circle job" style="left:32.9%; top:60%;"></div>
+                <div class="exp-job-card" style="left:32.9%; top:75%;">
                   <img src="images/unifirst.png" alt="UniFirst Logo">
                   <h4>Environmental Compliance Co-Op</h4>
                   <p class="exp-job-dates">January 2024 – June 2024</p>
@@ -172,9 +172,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
 
                 <!-- Job: Wood Mackenzie (start of 2025) -->
-                <div class="exp-node-line" style="left:750px; top:284px; height:46px;"></div>
-                <div class="exp-node-circle job" style="left:750px; top:284px;"></div>
-                <div class="exp-job-card" style="left:750px; top:330px;">
+                <div class="exp-node-line" style="left:53.6%; top:60%; height:15%;"></div>
+                <div class="exp-node-circle job" style="left:53.6%; top:60%;"></div>
+                <div class="exp-job-card" style="left:53.6%; top:75%;">
                   <img src="images/woodmac.png" alt="Wood Mackenzie Logo">
                   <h4>Power &amp; Renewables Co-Op</h4>
                   <p class="exp-job-dates">January 2025 – June 2025</p>
@@ -183,9 +183,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
 
                 <!-- Job: NuWave (middle of 2026) -->
-                <div class="exp-node-line" style="left:1050px; top:284px; height:46px;"></div>
-                <div class="exp-node-circle job" style="left:1050px; top:284px;"></div>
-                <div class="exp-job-card" style="left:1050px; top:330px;">
+                <div class="exp-node-line" style="left:75%; top:60%; height:15%;"></div>
+                <div class="exp-node-circle job" style="left:75%; top:60%;"></div>
+                <div class="exp-job-card" style="left:75%; top:75%;">
                   <img src="images/nuwave.png" alt="NuWave Logo">
                   <h4>Energy Engineer Co-Op</h4>
                   <p class="exp-job-dates">January 2026 – August 2026</p>
@@ -194,6 +194,59 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
 
               </div>
+            </div>
+
+            <!-- Mobile fallback: simple vertical stacked timeline, no scrollbar needed -->
+            <div class="exp-mobile-timeline">
+
+              <div class="exp-mtl-item">
+                <div class="exp-mtl-dot milestone"></div>
+                <div class="exp-mtl-year">2022</div>
+                <div class="exp-mtl-milestone">BEGINS COLLEGE</div>
+              </div>
+
+              <div class="exp-mtl-item">
+                <div class="exp-mtl-dot job"></div>
+                <div class="exp-mtl-year">2024</div>
+                <div class="exp-mtl-card">
+                  <img src="images/unifirst.png" alt="UniFirst Logo">
+                  <h4>Environmental Compliance Co-Op</h4>
+                  <p class="exp-job-dates">January 2024 – June 2024</p>
+                  <p class="exp-job-blurb">A six month, full-time environmental engineering Co-Op at <b>UniFirst Corporation</b>.</p>
+                  <a href="experience/UniFirst/unifirst_details.html">Learn More</a>
+                </div>
+              </div>
+
+              <div class="exp-mtl-item">
+                <div class="exp-mtl-dot job"></div>
+                <div class="exp-mtl-year">2025</div>
+                <div class="exp-mtl-card">
+                  <img src="images/woodmac.png" alt="Wood Mackenzie Logo">
+                  <h4>Power &amp; Renewables Co-Op</h4>
+                  <p class="exp-job-dates">January 2025 – June 2025</p>
+                  <p class="exp-job-blurb">A six month, full-time data science Co-Op at <b>Wood Mackenzie</b>.</p>
+                  <a href="experience/WoodMac/woodmac_details.html">Learn More</a>
+                </div>
+              </div>
+
+              <div class="exp-mtl-item">
+                <div class="exp-mtl-dot job"></div>
+                <div class="exp-mtl-year">2026</div>
+                <div class="exp-mtl-card">
+                  <img src="images/nuwave.png" alt="NuWave Logo">
+                  <h4>Energy Engineer Co-Op</h4>
+                  <p class="exp-job-dates">January 2026 – August 2026</p>
+                  <p class="exp-job-blurb">An eight month, full-time energy engineering Co-Op at <b>NuWave</b>.</p>
+                  <a href="experience/NuWave/nuwave_details.html">Learn More</a>
+                </div>
+              </div>
+
+              <div class="exp-mtl-item">
+                <div class="exp-mtl-dot milestone"></div>
+                <div class="exp-mtl-year">2027</div>
+                <div class="exp-mtl-milestone">GRADUATES COLLEGE</div>
+              </div>
+
             </div>
         </section>
 
