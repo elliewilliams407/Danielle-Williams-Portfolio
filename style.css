@@ -220,7 +220,7 @@ header {
 }
 
 .bloom-br { /*bottom right*/
-    top: 1020px;
+    top: 972px;
     right: -15px;
     width: 127px;
     height: 143px;
@@ -305,10 +305,9 @@ header {
    Sections
    ========================= */
 section {
-  margin: 480px 0px;
+  margin: 450px 0px;
   padding: 40px;
-  background: var(--background);
-  border-radius: 5px;
+  background: var(--eggshell);
   /*box-shadow: 0 0 15px var(--darker_dark_purple);*/
   align-items: center;
 }
@@ -569,7 +568,7 @@ footer {
 }
 
 .me-intro {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   line-height: 1.7;
   color: var(--eggshell);
   max-width: 65%;
@@ -616,7 +615,7 @@ footer {
     box-sizing: border-box;
     border: 3px solid var(--leaf_gray_outline);
     /* border-radius: 10px; */
-    color: var(--eggshell);
+    color: var(--darker_eggshell);
     font-family: 'JetBrains Mono', monospace;
     text-align: center;
     display: flex;
@@ -655,6 +654,7 @@ footer {
     border-width: 5px;
     font-family: 'Playfair Display', serif;
     background: var(--leaf_center);
+    color: var(--eggshell);
     /* font-style: italic; */
     font-weight: 800;
     font-size: 4.5rem;
