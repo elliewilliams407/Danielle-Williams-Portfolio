@@ -10,11 +10,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const sections = document.querySelectorAll('header#home, main section');
+  const navLinks = document.querySelectorAll('nav ul li a');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+        navLinks.forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+        });
+      }
+    });
+  }, {
+    root: null,
+    rootMargin: '-45% 0px -45% 0px', // section counts as "current" once it crosses the middle of the screen
+    threshold: 0
+  });
+
+  sections.forEach(section => observer.observe(section));
+});
+</script>
+
 <body>
     <main>
         <nav>
             <ul>
-                <li><a href="#home" class="active">/home</a></li>
+                <li><a href="#home">/home</a></li>
                 <li><a href="#me">/me</a></li>
                 <li><a href="#experience">/experience</a></li>
                 <li><a href="#projects">/projects</a></li>
