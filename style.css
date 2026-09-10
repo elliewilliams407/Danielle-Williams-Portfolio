@@ -28,6 +28,7 @@
 
   --leaf_green_opaque: #13501bd4;
   --leaf_gray_outline: #747474;
+  --leaf_center: #f5c0a5ba;
 }
 
 /* =========================
@@ -637,14 +638,15 @@ footer {
 .mm-skill:hover,
 .mm-skill:focus-visible {
   background: var(--leaf_green_opaque);
-  color: var(--background);
+  color: var(--eggshell);
   transform: translateY(-2px);
 }
 
 .mm-name {
-    border-color: #f5c0a5;
-    border-width: 3px;
+    border-color: var(--leaf_gray_outline);
+    border-width: 5px;
     font-family: 'JetBrains Mono', monospace;
+    background: var(--leaf_center);
     /* font-style: italic; */
     font-weight: 800;
     font-size: 4.5rem;
@@ -656,7 +658,7 @@ footer {
 .mm-name:hover,
 .mm-name:focus-visible {
   background: var(--leaf_green_opaque);
-  color: var(--background);
+  color: var(--eggshell);
   transform: translateY(-2px);
 }
 
