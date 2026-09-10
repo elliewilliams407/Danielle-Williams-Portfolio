@@ -219,6 +219,14 @@ header {
   animation-delay: 0.45s;
 }
 
+.bloom-br { /*bottom right*/
+    top: 1020px;
+    right: -15px;
+    width: 127px;
+    height: 143px;
+    animation-delay: 0.2s;
+}
+
 @keyframes bloomIn {
   0%   { opacity: 0; transform: scale(0.9) rotate(-3deg); }
   60%  { opacity: 1; }
@@ -273,7 +281,7 @@ header {
 .hero-content .subtagline {
   font-family: 'JetBrains Mono', monospace;
   font-size: 1em;
-  color: var(--leaf_gray_outline);
+  color: var(--darker_eggshell);
   margin: 0 0 80px 0;
   line-height: 1.2;
   letter-spacing: 0.5px;
@@ -297,7 +305,7 @@ header {
    Sections
    ========================= */
 section {
-  margin: 200px 0px;
+  margin: 480px 0px;
   padding: 40px;
   background: var(--background);
   border-radius: 5px;
@@ -622,7 +630,7 @@ footer {
 
 
 .mm-fact {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 
@@ -645,7 +653,7 @@ footer {
 .mm-name {
     border-color: var(--leaf_gray_outline);
     border-width: 5px;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Playfair Display', serif;
     background: var(--leaf_center);
     /* font-style: italic; */
     font-weight: 800;
