@@ -48,7 +48,7 @@ body {
   font-family: 'Roboto', 'Poppins', Arial, sans-serif;
   line-height: 1.6;
   color: var(--eggshell);
-  background: var(--eggshell);
+  background: var(--darker_eggshell);
   padding: 0; /* Remove horizontal padding */
 }
 
@@ -78,10 +78,10 @@ nav {
   top: 50%;                /* center vertically */
   right: 40px;
   transform: translateY(-50%);
-  background: var(--navy);
+  background: var(--darker_eggshell);
   color: var(--eggshell);
   padding: 0.2rem 0.5rem;
-  border-radius: 8px;
+  border-radius: 0px;
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.80rem;
   text-decoration: none;
@@ -889,7 +889,7 @@ footer {
     box-sizing: border-box;
     border: 3px solid var(--leaf_gray_outline);
     /* border-radius: 10px; */
-    color: var(--darker_eggshell);
+    color: var(--eggshell);
     font-family: 'JetBrains Mono', monospace;
     text-align: center;
     display: flex;
@@ -908,7 +908,7 @@ footer {
 }
 
 .mm-skill {
-  border-color: var(--leaf_gray_outline);
+  border-color: var(--eggshell);
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
