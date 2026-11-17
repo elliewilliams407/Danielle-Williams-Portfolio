@@ -467,7 +467,7 @@ section h4 {
 
 .exp-job-card {
   position: absolute;
-  width: 19%;
+  width: 20%;
   min-width: 150px;
   max-width: 260px;
   transform: translateX(-50%);
